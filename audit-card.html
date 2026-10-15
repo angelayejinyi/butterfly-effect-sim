@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Simulation Audit Card</title>
+  <style>
+    :root {
+      --ink: #18242d;
+      --muted: #596574;
+      --line: #d5dce5;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --blue: #2857a4;
+      --blue-soft: #edf6fa;
+      --green: #238263;
+      --green-soft: #edf7f2;
+      --orange: #b76425;
+      --orange-soft: #fbf3eb;
+      --red: #b33a3a;
+      --red-soft: #fbefef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Verdana, Geneva, sans-serif;
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(1480px, calc(100% - 32px));
+      margin: 24px auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 28px 32px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(26px, 3.2vw, 42px);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .subtitle {
+      max-width: 520px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .step {
+      position: relative;
+      min-height: 250px;
+      padding: 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .step:last-child { border-right: 0; }
+
+    .step::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      right: -7px;
+      z-index: 1;
+      width: 12px;
+      height: 12px;
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      transform: rotate(45deg);
+    }
+
+    .step:last-child::after { display: none; }
+
+    .step-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .number {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      flex: 0 0 36px;
+      place-items: center;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      font-weight: 700;
+    }
+
+    .step h2 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .step ul {
+      min-height: 86px;
+      margin: 0 0 24px;
+      padding-left: 18px;
+      color: #394852;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .output {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 2px solid currentColor;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .output strong {
+      display: block;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .decision-rule {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2px 8px;
+    }
+
+    .decision-rule b { color: var(--ink); }
+
+    .outcomes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .outcome-chip {
+      padding: 3px 5px;
+      border: 1px solid currentColor;
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .s1 { color: var(--blue); }
+    .s2 { color: var(--orange); }
+    .s3 { color: var(--green); }
+    .s4 { color: #6760a9; }
+    .s5 { color: var(--red); }
+
+    .examples {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .case {
+      padding: 28px 32px 32px;
+    }
+
+    .case + .case { border-left: 1px solid var(--line); }
+
+    .case-kicker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+    }
+
+    .case-kicker span {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 13px;
+      letter-spacing: 0;
+    }
+
+    .pd .case-kicker span { background: var(--blue); }
+    .ec .case-kicker span { background: var(--green); }
+
+    .case h2 {
+      margin: 0 0 22px;
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.9fr 1fr;
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .case-block {
+      min-height: 250px;
+      padding: 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .case-block:last-child { border-right: 0; }
+
+    .label {
+      margin-bottom: 16px;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .claim {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .contrast {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 18px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .arrow { color: var(--muted); }
+
+    .metric {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 8px;
+      margin: 16px 0;
+      font-size: 11px;
+    }
+
+    .track {
+      height: 8px;
+      overflow: hidden;
+      background: #e8ecee;
+    }
+
+    .bar { height: 100%; }
+    .bar.blue { width: 98.2%; background: var(--blue); }
+    .bar.orange { width: 23%; background: var(--orange); }
+    .bar.low { width: 49.6%; background: #9eb9aa; }
+    .bar.medium { width: 86.2%; background: #56a07f; }
+    .bar.high { width: 100%; background: var(--green); }
+
+    .effect {
+      margin-top: 28px;
+      padding: 12px 0 0;
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .effect small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .verdict {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 8px;
+      background: var(--red-soft);
+      color: var(--red);
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .verdict.scope {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .case-conclusion { padding-top: 18px; }
+
+    .case-block p {
+      margin: 0;
+      color: #394852;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .signal {
+      margin: 14px 0 22px;
+    }
+
+    .signal-line {
+      position: relative;
+      height: 3px;
+      margin-top: 12px;
+      background: #dce3e6;
+    }
+
+    .signal-line::before {
+      content: "";
+      position: absolute;
+      left: 45%;
+      top: -4px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .signal-line::after {
+      content: "";
+      position: absolute;
+      left: 30%;
+      right: 38%;
+      top: -1px;
+      height: 5px;
+      background: rgba(35, 130, 99, 0.2);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 15px 32px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (min-width: 1051px) {
+      .page { margin: 8px auto; }
+      header { padding: 14px 24px 12px; }
+      h1 { font-size: clamp(28px, 2.5vw, 36px); }
+      .subtitle { max-width: 500px; font-size: 15px; line-height: 1.3; }
+
+      .step { min-height: 168px; padding: 12px 16px; }
+      .step::after { top: 27px; }
+      .step-head { gap: 10px; margin-bottom: 9px; }
+      .number { width: 34px; height: 34px; flex-basis: 34px; font-size: 20px; }
+      .step h2 { font-size: 21px; }
+      .step ul {
+        min-height: 47px;
+        margin-bottom: 8px;
+        font-size: 15px;
+        line-height: 1.3;
+      }
+      .output { padding-top: 6px; font-size: 16px; line-height: 1.2; }
+      .output strong { margin-bottom: 2px; font-size: 14px; }
+      .decision-rule { gap: 2px 6px; font-size: 14px; }
+      .outcomes { gap: 3px; }
+      .outcome-chip { padding: 3px 5px; font-size: 10px; }
+
+      .case { padding: 12px 22px 13px; }
+      .case-kicker { margin-bottom: 6px; font-size: 12px; }
+      .case-kicker span { width: 24px; height: 24px; font-size: 11px; }
+      .case h2 { margin-bottom: 9px; font-size: 24px; }
+      .case-block { min-height: 168px; padding: 11px; }
+      .label { margin-bottom: 8px; font-size: 11px; }
+      .claim { font-size: 18px; line-height: 1.25; }
+      .contrast { margin-bottom: 8px; font-size: 12px; }
+      .case-block p { font-size: 13px; line-height: 1.35; }
+      .metric { margin: 8px 0; font-size: 12px; }
+      .effect { margin-top: 12px; padding-top: 6px; font-size: 20px; }
+      .effect small { font-size: 12px; }
+      .signal { margin: 6px 0 10px; }
+      .signal-line { margin-top: 6px; }
+      .case-conclusion { padding-top: 8px; }
+      .verdict { margin-bottom: 6px; padding: 5px 9px; font-size: 13px; }
+      footer { padding: 7px 22px; font-size: 11px; }
+    }
+
+    @media (max-width: 1050px) {
+      header { align-items: start; flex-direction: column; }
+      .workflow { grid-template-columns: repeat(2, 1fr); }
+      .step { border-bottom: 1px solid var(--line); }
+      .step:nth-child(2n) { border-right: 0; }
+      .step::after { display: none; }
+      .step:last-child { grid-column: 1 / -1; min-height: auto; }
+      .examples { grid-template-columns: 1fr; }
+      .case + .case { border-left: 0; border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 680px) {
+      .page { width: 100%; margin: 0; border: 0; }
+      header, .case { padding: 24px 20px; }
+      .workflow { grid-template-columns: 1fr; }
+      .step { min-height: auto; border-right: 0; }
+      .step:last-child { grid-column: auto; }
+      .step ul { min-height: auto; }
+      .case-grid { grid-template-columns: 1fr; }
+      .case-block { min-height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+      .case-block:last-child { border-bottom: 0; }
+      footer { flex-direction: column; padding: 16px 20px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .page { width: 100%; margin: 0; border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>The Social Simulation Audit Card</h1>
+      <p class="subtitle">A five-step workflow for auditing robustness and calibrating scientific claims in LLM social simulations.</p>
+    </header>
+
+    <section class="workflow" aria-label="Five-step audit workflow">
+      <article class="step s1">
+        <div class="step-head"><span class="number">1</span><h2>State the claim</h2></div>
+        <ul><li>Specify the scientific conclusion.</li><li>Define what must be preserved.</li></ul>
+        <div class="output"><strong>Output</strong>Measurable claim-preservation criterion.</div>
+      </article>
+      <article class="step s2">
+        <div class="step-head"><span class="number">2</span><h2>Map perturbations</h2></div>
+        <ul><li>Classify with TRAILS-R or TRAILS-D.</li><li>Judge context relevance.</li></ul>
+        <div class="output">
+          <strong>Interpretation rule</strong>
+          <div class="decision-rule">
+            <b>Relevant</b><span>&rarr; scope condition</span>
+            <b>Irrelevant</b><span>&rarr; implementation dependence</span>
+          </div>
+        </div>
+      </article>
+      <article class="step s3">
+        <div class="step-head"><span class="number">3</span><h2>Register and run</h2></div>
+        <ul><li>Set baseline and alternatives.</li><li>Fix models, seeds, and controls.</li></ul>
+        <div class="output"><strong>Output</strong>Pre-registered audit setup.</div>
+      </article>
+      <article class="step s4">
+        <div class="step-head"><span class="number">4</span><h2>Analyze sensitivity</h2></div>
+        <ul><li>Estimate effects and uncertainty.</li><li>Check consistency across runs.</li></ul>
+        <div class="output"><strong>Output</strong>Magnitude, precision, and consistency.</div>
+      </article>
+      <article class="step s5">
+        <div class="step-head"><span class="number">5</span><h2>Scope the claim</h2></div>
+        <ul><li>Apply the preservation criterion.</li><li>Report the supported scope.</li></ul>
+        <div class="output">
+          <strong>Outcomes</strong>
+          <div class="outcomes">
+            <span class="outcome-chip">Robust</span>
+            <span class="outcome-chip">Scope-limited</span>
+            <span class="outcome-chip">Implementation-sensitive</span>
+            <span class="outcome-chip">Inconclusive</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="examples" aria-label="Audit examples">
+      <article class="case pd">
+        <div class="case-kicker"><span>A</span>PD audit</div>
+        <h2>Repeated Prisoner's Dilemma</h2>
+        <div class="case-grid">
+          <div class="case-block">
+            <div class="label">Scientific claim</div>
+            <div class="claim">Agents exhibit stable cooperation in repeated interaction.</div>
+          </div>
+          <div class="case-block">
+            <div class="label">Perturbation</div>
+            <div class="contrast"><span>PLAIN</span><span class="arrow">&rarr;</span><span>DESCRIPTIVE</span></div>
+            <p><strong>TRAILS-R</strong><br>Persona format<br>Context-irrelevant</p>
+          </div>
+          <div class="case-block">
+            <div class="label">Result &middot; GPT-5.2</div>
+            <div class="metric"><span>Plain</span><div class="track"><div class="bar blue"></div></div><strong>98.2%</strong></div>
+            <div class="metric"><span>Desc.</span><div class="track"><div class="bar orange"></div></div><strong>23.0%</strong></div>
+            <div class="effect">&minus;75.2 pp<small>DESCRIPTIVE &minus; PLAIN<br>95% CI [&minus;88.3, &minus;62.0]</small></div>
+          </div>
+        </div>
+        <div class="case-conclusion"><span class="verdict">Implementation-sensitive</span><p>Cooperation changes substantially under an implementation-equivalent representation.</p></div>
+      </article>
+
+      <article class="case ec">
+        <div class="case-kicker"><span>B</span>Echo-chamber audit</div>
+        <h2>Social-media echo chamber</h2>
+        <div class="case-grid">
+          <div class="case-block">
+            <div class="label">Scientific claim</div>
+            <div class="claim">The simulation produces echo-chamber-like interaction structure.</div>
+          </div>
+          <div class="case-block">
+            <div class="label">Perturbation</div>
+            <div class="contrast"><span>LOW</span><span class="arrow">&rarr;</span><span>MEDIUM</span><span class="arrow">&rarr;</span><span>HIGH</span></div>
+            <p><strong>TRAILS-D</strong><br>Input-network homophily<br>Context-relevant</p>
+          </div>
+          <div class="case-block">
+            <div class="label">Result &middot; GPT-5.2</div>
+            <div class="metric"><span>Low</span><div class="track"><div class="bar low"></div></div><strong>0.142</strong></div>
+            <div class="metric"><span>Med.</span><div class="track"><div class="bar medium"></div></div><strong>0.247</strong></div>
+            <div class="metric"><span>High</span><div class="track"><div class="bar high"></div></div><strong>0.287</strong></div>
+            <div class="effect">+0.145<small>HIGH &minus; LOW stance assortativity</small></div>
+          </div>
+        </div>
+        <div class="case-conclusion"><span class="verdict scope">Scope-limited</span><p>Echo-chamber strength depends on the meaningful network conditions included in the claim.</p></div>
+      </article>
+    </section>
+
+    <footer>
+      <span>TRAILS &middot; Taxonomy for Robustness Audits In LLM Simulations</span>
+      <span>Examples contrast implementation dependence with a meaningful scope condition.</span>
+    </footer>
+  </main>
+</body>
+</html>
