@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,1,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defect to secure payoff against unknown opponent.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,2,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round mutual defection suggests opponent may be retaliatory; testing cooperation to potentially shift to mutual cooperation for higher payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,3,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, so exploit by defecting to avoid loss and secure at least 1 payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in 2 of 3 rounds, including after my cooperation; exploit by defecting to avoid exploitation and secure at least 1.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,5,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; cooperating yields 0, defecting yields 1.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; exploit by defecting to secure payoff 1 rather than risk 0.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 2, so cooperating yields 0 while defecting yields at least 1; maximizing payoff means defect.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,26,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash

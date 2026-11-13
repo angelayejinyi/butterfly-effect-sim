@@ -1,0 +1,51 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,25,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to test opponent's tendency and build potential mutual benefit.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so exploit their likely defection to secure at least 1 payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,3,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so they are not purely cooperative; defect to avoid exploitation and secure at least 1 payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent alternates between Defect and Cooperate; exploit by defecting to secure payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected once and cooperated twice, but my defections have yielded high payoffs; defecting now exploits potential cooperation while avoiding the sucker payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,6,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has shown willingness to defect, and defecting maximizes my payoff in this competitive repeated game.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown inconsistency but often cooperates after my defection; defecting maximizes my payoff given no clear cooperative pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown inconsistency and vulnerability to defection; maximizing payoff by defecting.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown inconsistency but often cooperates after defection; defecting maximizes payoff given no trust.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,25,10,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defects often and cooperates unpredictably; defecting maximizes my payoff in this repeated game.""
+}
+```",deepseek-v4-flash

@@ -1,0 +1,55 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,18,1,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Maximize immediate payoff with no history to exploit""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploited opponent's cooperation in round 1 for max gain; expect retaliation but Defect ensures safety against potential Defect, maximizing payoff in repeated game.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for maximum payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated twice then defected once; exploit potential weakness by defecting to secure high payoff or avoid low payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,5,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has not punished defection, so exploit continues for max payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,6,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in rounds 1,2,5 despite my defections, suggesting a forgiving or exploitable policy; defecting maximizes my payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has cooperated in 4 of 6 rounds, but defected twice; defecting maximizes payoff given uncertainty and past success.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown no retaliation pattern; exploiting cooperation yields max payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent alternates between cooperate and defect; exploit by defecting for guaranteed high payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,18,10,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated last round, so defecting exploits this for max payoff.""
+}
+```",deepseek-v4-flash

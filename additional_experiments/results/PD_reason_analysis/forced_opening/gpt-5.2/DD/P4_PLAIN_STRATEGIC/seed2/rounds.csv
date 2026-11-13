@@ -1,0 +1,62 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC,DD,2,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,2,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, indicating a cautious/competitive stance; defecting again avoids being exploited and keeps a safe baseline payoff while we probe whether the opponent will shift toward cooperation.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, switch to cooperation to test whether the opponent is willing to move toward mutual cooperation; if they defect again, revert to defection next round to avoid being exploited.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,3,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after mutual defection, suggesting they may be forgiving or trying to reset; defecting again exploits this while still yielding at least 1 if they switch to defect.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both prior rounds, including exploiting my cooperation in round 2; until they show willingness to cooperate, defecting avoids repeated sucker payoffs and keeps me competitive.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,4,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent is not reliably cooperative (defected in rounds 1 and 3) and already tolerated my defection once; defecting secures at least 1 and can yield 5 if they try to cooperate again.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round so far; cooperating yields 0 while defecting secures at least 1 and avoids further exploitation. Continue defecting until they show sustained cooperation.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,5,False,Defect,Defect,1,1,True,True,,,"{""action"":""Defect"",""reason"":""Other agent has mostly defected (3/4 rounds) and even after being exploited in round 2 did not establish stable cooperation; with only 6 rounds left, defecting avoids the 0 payoff risk and secures at least 1 if they defect again.""}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round so far (including when I cooperated), indicating a strong defection bias; continued defection avoids further exploitation and is the best response given the observed pattern.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,6,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has mostly defected (4/5 rounds) and only cooperated once after my defection; with no sustained cooperation signal and limited rounds remaining, defection avoids being exploited and is the safer payoff-maximizing choice.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round so far (including when I cooperated), indicating a strong defection bias; best response is to defect to avoid being exploited and secure at least 1 per round.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects (5 of 6 rounds) and only cooperated once after mutual defection; continued defection secures at least 1 and avoids being exploited, while a unilateral switch to cooperate is likely to yield 0.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round so far, including when I cooperated (round 2), indicating a strong defect bias. With 4 rounds left, cooperating is unlikely to be reciprocated and risks a 0 payoff; defecting secures at least 1 and avoids exploitation.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,8,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 6 of 7 rounds and reverted to mutual defection after being exploited once; with only 3 rounds left, defection secures at least 1 and avoids the 0 payoff risk if they defect again.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in 7/7 observed rounds (including when I cooperated), indicating a near-certain defection strategy; defecting avoids repeated sucker payoffs and secures the best response given the pattern with only 3 rounds left.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,9,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 7 of 8 rounds and reverted to mutual defection after a single cooperation; with only two rounds left, continued defection avoids exploitation and is the best response to their apparent defection-biased strategy.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 8/8 rounds (including after my cooperation in round 2), indicating a persistent defection strategy; defecting avoids repeated exploitation and is the best response given the established pattern with only two rounds left.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,2,10,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 8 of 9 rounds and responded to our continued defection with persistent defection; with one round left, cooperation is unlikely to be reciprocated and risks a 0 payoff, while defection guarantees at least 1.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 9/9 rounds and did not reciprocate when I cooperated (round 2). With one round left, cooperation is unlikely to be rewarded; defecting avoids the 0 payoff risk and secures at least 1.""
+}",gpt-5.2

@@ -1,0 +1,55 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,2,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defect to secure payoff against unknown opponent.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's cooperation for maximum payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,3,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently cooperates, so defecting maximizes payoff each round.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates, so defecting maximizes payoff each round.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,5,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has been exploited successfully; even after defection in round 4, they may continue cooperating, so defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly cooperates despite my defections, so exploiting yields high payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates; defecting maximizes payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates despite my defections, so exploiting yields high payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates despite defection, maximizing my payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,2,10,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates despite my defections, so exploiting yields high payoff; no sign of retaliation.""
+}
+```",deepseek-v4-flash

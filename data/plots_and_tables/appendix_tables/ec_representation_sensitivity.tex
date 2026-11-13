@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Echo-chamber sensitivity to narrative-prose versus structured-bullet persona representation.}
+\label{tab:appendix-ec-representation-sensitivity}
+\begin{tabular}{lp{2.5cm}p{2.5cm}p{3.5cm}p{3.8cm}p{3.8cm}}
+\toprule
+Model & \multicolumn{3}{c}{Behavioral sensitivity} & \multicolumn{2}{c}{Collective divergence} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+ & Action agreement [95\% CI] & Target agreement [95\% CI] & Cross-group targeting $\Delta$ (pp) [95\% CI]; $p_{\mathrm{Holm}}$ & Round-15 stance assortativity $\Delta$ [95\% CI]; $p_{\mathrm{Holm}}$ & Round-15 weighted same-group edge ratio $\Delta$ [95\% CI]; $p_{\mathrm{Holm}}$ \\
+\midrule
+GPT-5.2 & $99.7$ $[99.6, 99.8]$ & $55.1$ $[54.1, 56.0]$ & $+5.1$ $[+4.2, +6.1]$; $p_{\mathrm{Holm}}=2.24e-08$ & $-0.194$ $[-0.220, -0.167]$; $p_{\mathrm{Holm}}=2.24e-08$ & $-0.051$ $[-0.061, -0.041]$; $p_{\mathrm{Holm}}=2.24e-08$ \\
+Claude Haiku 4.5 & $93.6$ $[93.2, 94.1]$ & $59.3$ $[58.5, 60.1]$ & $-0.9$ $[-1.6, -0.2]$; $p_{\mathrm{Holm}}=0.0464$ & $-0.002$ $[-0.015, +0.010]$; $p_{\mathrm{Holm}}=0.598$ & $+0.010$ $[+0.003, +0.017]$; $p_{\mathrm{Holm}}=0.0201$ \\
+Gemini 2.5 Flash & $85.0$ $[83.9, 86.0]$ & $61.0$ $[60.2, 61.8]$ & $+2.3$ $[+1.5, +3.1]$; $p_{\mathrm{Holm}}=8.53e-05$ & $-0.035$ $[-0.050, -0.019]$; $p_{\mathrm{Holm}}=0.000553$ & $-0.023$ $[-0.031, -0.014]$; $p_{\mathrm{Holm}}=0.000109$ \\
+DeepSeek V4 Flash & $66.3$ $[64.9, 67.7]$ & $14.4$ $[13.7, 15.1]$ & $-7.3$ $[-9.0, -5.7]$; $p_{\mathrm{Holm}}=2.98e-08$ & $-0.023$ $[-0.068, +0.022]$; $p_{\mathrm{Holm}}=0.457$ & $+0.072$ $[+0.057, +0.087]$; $p_{\mathrm{Holm}}=2.24e-08$ \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{0.99\textwidth}{\scriptsize \textit{Note.} Agreement quantities are paired-run agreement rates. Differences are signed Narrative Prose minus Bullet Original and use the paired simulation seed as the unit of analysis ($N=30$). Reported $p$-values use two-sided paired Wilcoxon signed-rank tests and are Holm-corrected across the 12 model--outcome tests. These quantities measure representation sensitivity and collective divergence, not amplification.}
+\end{table*}

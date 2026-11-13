@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,3,1,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and potentially establish mutual cooperation for higher long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,2,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1; starting with mutual cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,3,Cooperate,Defect,0,5,True,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Opponent has cooperated twice, building mutual trust. Continuing cooperation maximizes long-term payoff in early rounds.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, likely to exploit cooperation; retaliate to deter future defections.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 3, so I defect to avoid exploitation and secure payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,6,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected in round 3, then cooperated in round 5 after my defection; likely exploitable but unpredictable, so defect to secure payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,7,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after my defection, showing exploitable forgiveness; I continue defecting to maximize payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,8,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has alternated between Defect and Cooperate after my Defects; exploiting by Defecting to secure payoff or avoid sucker loss.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,9,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has been unpredictable but often defects; defecting maximizes my payoff in this late stage.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,3,10,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent alternates between Cooperate and Defect; Defect exploits cooperation and avoids sucker payoff.""
+}",deepseek-v4-flash

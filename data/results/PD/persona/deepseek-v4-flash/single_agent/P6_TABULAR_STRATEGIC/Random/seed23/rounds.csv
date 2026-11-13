@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,23,1,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defecting maximizes immediate payoff and avoids risk of opponent defecting first.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so defecting now avoids exploitation and maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,3,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent cooperated last round after mutual defection, indicating potential exploitability; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated twice after my defections, suggesting a forgiving or exploitable pattern; defecting maximizes my payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,5,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown willingness to cooperate and defect; defecting exploits their cooperation while avoiding risk of being exploited.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown willingness to cooperate and defect; defecting maximizes my payoff given uncertainty.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 4 of 6 rounds, showing no consistent cooperation; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has mostly defected recently, so defecting maximizes payoff and avoids exploitation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often defects, and defection yields higher payoff against a mixed strategy.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,23,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent alternates but often defects; defecting maximizes payoff.""
+}",deepseek-v4-flash

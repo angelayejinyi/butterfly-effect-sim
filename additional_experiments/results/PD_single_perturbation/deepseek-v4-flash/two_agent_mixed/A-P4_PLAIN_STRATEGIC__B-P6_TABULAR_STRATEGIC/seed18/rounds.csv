@@ -1,0 +1,87 @@
+persona_format,persona_a,persona_b,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,1,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Starting with cooperation to build mutual trust and maximize long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,2,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continuing cooperation builds mutual trust and maximizes long-term payoff.""
+}","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, signaling mutual cooperation. Continuing to cooperate maintains trust and maximizes long-term payoff in this repeated game.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,3,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, establishing mutual trust. Continuing cooperation maximizes long-term payoff in this repeated game.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,4,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both have cooperated consistently; maintaining mutual cooperation yields highest long-term payoff.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for high payoff""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,5,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been consistent and profitable; continue to build trust and maximize long-term payoff.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,6,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable and profitable; continue to build trust.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for continued high payoff""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,7,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent 3 payoff; no defection observed yet.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,8,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent defected last round, breaking cooperation. To avoid exploitation and potentially restore mutual cooperation, I will defect this round to signal that defection is costly.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,9,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After 6 mutual cooperations, opponent defected in round 7; I retaliated in round 8. To avoid being exploited again while signaling willingness to return to cooperation, I will defect this round to test if opponent re-cooperates.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Rebuild trust after defection to encourage mutual cooperation in final rounds""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,18,10,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""The opponent cooperated in round 9 after my defection, suggesting a forgiving or tit-for-tat strategy. To rebuild mutual cooperation and maximize long-term payoff, I should cooperate now.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round, signaling willingness to exploit; defecting now protects against further exploitation and may force renegotiation.""
+}
+```",deepseek-v4-flash

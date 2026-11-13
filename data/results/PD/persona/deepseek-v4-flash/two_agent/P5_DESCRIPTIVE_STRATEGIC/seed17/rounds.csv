@@ -1,0 +1,87 @@
+persona_format,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,17,1,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defecting maximizes immediate payoff and avoids risk of being exploited.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defection maximizes immediate payoff and avoids risk of being exploited.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,2,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1; defecting again is safe and avoids exploitation while seeking advantage.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, so no trust established. Defecting now maximizes payoff if opponent cooperates, and avoids worst-case (0) if opponent defects.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,3,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both previous rounds ended in mutual defection, indicating opponent may be defecting consistently. Defecting maximizes payoff against a likely defector.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both previous rounds ended in mutual defection; no cooperative pattern to exploit, so continue defecting to secure at least 1 payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,4,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Both agents have consistently defected; defecting remains safe and avoids exploitation while maintaining payoff.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; defecting maximizes my payoff in this repeated game.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,5,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff and avoids exploitation.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate alone.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,6,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects, so defecting maximizes my payoff and avoids exploitation.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no benefit to cooperating alone.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,7,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects, no cooperation to exploit; mutual defection is safe and payoff-maximizing given history.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff and avoids exploitation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,8,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,9,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no trust established. Defecting maximizes my payoff given the pattern.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate as it would reduce my payoff.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,17,10,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate alone.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; no incentive to cooperate alone.""
+}
+```",deepseek-v4-flash

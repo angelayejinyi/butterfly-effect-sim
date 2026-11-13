@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,5,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and encourage mutual benefit.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid exploitation and test if they can be conditioned to cooperate.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,3,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, no cooperation to exploit; defecting maximizes my payoff against a defector.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,4,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected in round 1 and cooperated in round 3 after my defection, suggesting they may be trying to exploit cooperation. Defecting now tests if they will retaliate or continue cooperating, maximizing my payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 3 of 4 rounds, showing no consistent cooperation; defecting maximizes my payoff against this pattern.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,6,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent alternates between Defect and Cooperate; Defecting exploits their cooperation rounds and avoids sucker payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,7,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often defects after my defection, but also cooperates unpredictably; defecting maximizes my payoff given the pattern.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,8,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent often cooperates after my defections, so I can exploit this pattern for high payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates after defection, so exploit with defect for high payoff""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,5,10,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has mostly cooperated recently; testing if they reciprocate cooperation for mutual gain.""
+}",deepseek-v4-flash

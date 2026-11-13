@@ -1,0 +1,101 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,DD,18,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,2,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents defected in round 1, suggesting mutual defection may be the equilibrium strategy given identical personas focused on maximizing payoff. Defecting guarantees 1 point and prevents exploitation (0 points if I cooperate while opponent defects). In a symmetric game with competitive personas, defection is the safer dominant strategy to maintain parity and avoid being the sucker. Will reassess if opponent shows cooperation pattern.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Round 1 established mutual defection (1,1). Given symmetric personas optimizing payoff, the other agent will likely continue defecting. Defecting guarantees 1 point vs. risking 0 if I cooperate while they defect. With 9 rounds remaining and no trust established, defection is the safer dominant strategy to maximize payoff.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,3,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have defected in rounds 1-2, establishing a mutual defection pattern. Given identical personas optimizing for payoff, the other agent will likely continue defecting. Cooperating would yield 0 payoff vs. 1 from mutual defection. Defect maximizes my payoff against the expected defection, while remaining opportunistic to switch if the opponent shows cooperation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both rounds show mutual defection (1,1 payoffs). The other agent has demonstrated a defection-first strategy, suggesting they're also playing competitively. Cooperating now risks (0,5) exploitation. Continuing defection maintains (1,1) while I study their pattern further. With 8 rounds remaining, I'll monitor for any shift toward cooperation before adjusting strategy. Defecting is the safer exploitative play given the observed pattern.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected all 3 rounds, establishing a clear pattern of non-cooperation. Continuing to defect matches their strategy and secures my minimum payoff of 1 per round, avoiding the 0 payoff risk from unilateral cooperation. Given the repeated mutual defection, attempting cooperation now would be exploitable with no evidence of reciprocation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected all 3 rounds, establishing a clear pattern of non-cooperation. Continuing to defect maintains my payoff at 1 and prevents exploitation (which would yield 0 if I cooperate while they defect). In a competitive repeated game, matching their defection strategy is optimal against a consistent defector.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-4). Mutual defection is established pattern. Cooperating would yield 0 payoff vs. 1 from defecting. Continue defection to secure payoff and avoid exploitation. No evidence opponent will shift strategy.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-4). Mutual defection is the established pattern. Cooperating would risk exploitation (0 payoff) while defecting guarantees 1 payoff. With 6 rounds remaining, defection is the safe, competitive choice against a consistent defector.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-5). Mutual defection is the established pattern. Switching to Cooperate would risk exploitation (0 payoff) while opponent likely continues defecting. Defect maintains the secure 1-point payoff and prevents being taken advantage of. With 5 rounds remaining, the opponent shows no sign of cooperation, so continuing defection is the rational exploitative response.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-5). Mutual defection is the established pattern. Switching to Cooperate would yield 0 payoff while opponent gets 5, exploiting my cooperation. Defect maintains my payoff at 1 and prevents being exploited. With 5 rounds remaining, continuing defection is the rational competitive response to consistent defection.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-6). Consistent defection signals they are exploiting mutual cooperation or playing a non-cooperative strategy. Continuing to defect matches their pattern, secures my payoff at 1, and avoids the sucker's payoff (0) if I cooperate while they defect. With 4 rounds remaining, attempting cooperation now risks being exploited. Defect remains the safe, competitive choice.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-6). Consistent defection indicates they are exploiting mutual cooperation or playing a non-cooperative strategy. Continuing to defect matches their pattern, secures my payoff at 1, and prevents being exploited (0 payoff if I cooperate while they defect). With 4 rounds remaining, establishing mutual defection at (1,1) is safer than risking (0,5) by cooperating unilaterally.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-7). Consistent defection signals they are not cooperating. Switching to Cooperate would yield 0 payoff while they get 5. Continuing to Defect maintains the (1,1) payoff and prevents exploitation. No exploitable pattern suggests cooperation is imminent.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-7). Consistent defection signals they are not cooperating. Switching to Cooperate would yield 0 payoff while they get 5. Continuing to Defect maintains my payoff at 1 and prevents exploitation. Given the established pattern and remaining rounds (3 left), defection is the safer competitive choice.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-8). Established pattern shows no cooperation tendency. Defecting maintains payoff of 1 vs. risking 0 if I cooperate while opponent defects. With 2 rounds remaining, switching to cooperation is high-risk/low-reward given opponent's consistent defection strategy. Continue defecting to secure guaranteed payoff.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-8). Consistent defection signals they won't cooperate, making cooperation exploitable (I'd get 0 vs their 5). Defecting guarantees 1 point vs risking 0. With 2 rounds remaining, establishing cooperation is unlikely. Defect maximizes payoff against this pattern.""
+}
+```",claude-haiku-4-5-20251001
+P5_DESCRIPTIVE_STRATEGIC,DD,18,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-9). Mutual defection is now established pattern. Switching to Cooperate would yield 0 payoff while opponent gets 5. Defecting maintains 1 payoff and prevents exploitation. With only 1 round remaining, no time to rebuild cooperation. Continue defecting.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round (1-9). Mutual defection is the established pattern. With only 1 round remaining, cooperating would yield 0 payoff while defecting yields 1. No incentive to deviate from the locked-in equilibrium.""
+}
+```",claude-haiku-4-5-20251001

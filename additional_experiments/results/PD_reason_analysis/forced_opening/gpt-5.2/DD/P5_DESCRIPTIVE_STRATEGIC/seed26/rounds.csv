@@ -1,0 +1,62 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,DD,26,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,2,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, suggesting a competitive baseline; defecting avoids being exploited while gathering more evidence about whether the opponent will shift toward cooperation.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, indicating a competitive baseline; defecting again avoids being exploited if the other continues defecting and keeps my payoff at least 1.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,3,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected twice; with no cooperation signal, defecting avoids being exploited and maintains the safe 1 payoff while probing for any change.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows mutual defection with no cooperation signal; staying with Defect avoids being exploited and maintains the safe 1 payoff while probing for any unilateral shift by the opponent.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,4,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows mutual defection with no sign of cooperation; defecting avoids being exploited and maintains the safe payoff while waiting for any shift.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History is mutual defection for 3 rounds; with no signal of willingness to cooperate, defecting avoids being exploited and preserves the safe 1 payoff while waiting for the other to change strategy first.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,5,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no sign of cooperation; switching to Cooperate would likely be exploited for 0 while Defect secures at least 1 and avoids downside.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History is mutual defection with no sign of cooperation; defecting avoids being exploited and keeps the guaranteed 1 while probing for any change later.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,6,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round; cooperating is likely to be exploited for 0 while defection guarantees at least 1 and avoids being the sucker.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows five straight mutual defections with no sign the opponent will switch; defecting avoids being exploited and preserves the guaranteed 1 payoff while waiting for credible cooperation.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,7,False,Defect,Defect,1,1,True,True,,,"{""action"":""Defect"",""reason"":""Both players have locked into mutual defection for 6 rounds; a unilateral switch to Cooperate is likely exploited for 0 while Defect guarantees at least 1 and avoids being the first to concede without evidence of reciprocity.""}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no sign the opponent will switch; defecting avoids being exploited and maintains the guaranteed 1 payoff.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,8,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no signals of cooperation; cooperating now risks a 0 payoff if they continue defecting, while defecting guarantees at least 1 and avoids being exploited.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Seven straight mutual defections indicate the opponent is locked into defection; cooperating would likely be exploited for 0 while defection guarantees at least 1 and avoids downside.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,9,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both players have defected every round so far, indicating a stable mutual-defection equilibrium; cooperating now is likely to be exploited with little chance of shifting behavior this late.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no sign of cooperation; cooperating now risks a 0 payoff if they continue defecting, while defection guarantees at least 1 and is consistent with their observed strategy.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,DD,26,10,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no sign of cooperation; in the final round, defection avoids being exploited and is the best response to an opponent likely to defect.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows persistent mutual defection with no sign of cooperation; with one round left, defect avoids being exploited and matches the opponent’s established pattern.""
+}",gpt-5.2

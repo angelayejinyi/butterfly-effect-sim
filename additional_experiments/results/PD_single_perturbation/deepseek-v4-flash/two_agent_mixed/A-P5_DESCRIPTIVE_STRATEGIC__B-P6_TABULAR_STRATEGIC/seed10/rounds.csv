@@ -1,0 +1,91 @@
+persona_format,persona_a,persona_b,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,1,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defecting maximizes immediate payoff and avoids risk of being exploited.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and maximize mutual payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,2,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After exploiting cooperation in round 1, offering cooperation now may build trust for mutual gain in later rounds.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 1, so I will defect to avoid exploitation and maximize payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,3,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After round 1, I defected and got 5; round 2, I cooperated and got 0. The opponent defected when I cooperated, showing they exploit cooperation. To maximize payoff, I defect now to avoid being exploited again.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 1, so they are not trustworthy; defecting now exploits their potential cooperation and maximizes my payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,4,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round, likely retaliating; to avoid being exploited again, I defect to secure at least 1 payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 1 and cooperated in round 2, then defected in round 3. Unpredictable pattern; defecting now ensures at least 1 payoff and avoids being exploited again.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,5,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last two rounds, likely to continue; defecting maximizes my payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has defected in 3 of 4 rounds, showing no consistent cooperation; defecting maximizes my payoff and exploits their tendency to defect.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,6,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 3, so defecting maximizes payoff and avoids exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 3, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,7,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 3; no sign of cooperation, so defecting maximizes my payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 3; defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,8,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has consistently defected since round 3, no incentive to cooperate""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent consistently defects; defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,9,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 3, no sign of cooperation; defecting maximizes payoff in this endgame.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 3; defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC__P6_TABULAR_STRATEGIC,P5_DESCRIPTIVE_STRATEGIC,P6_TABULAR_STRATEGIC,10,10,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 3, no sign of cooperation; defecting maximizes payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in final round""
+}
+```",deepseek-v4-flash

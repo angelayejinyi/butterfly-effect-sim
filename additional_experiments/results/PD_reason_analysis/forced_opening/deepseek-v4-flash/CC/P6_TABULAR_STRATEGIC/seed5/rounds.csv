@@ -1,0 +1,87 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,CC,5,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,2,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, establishing mutual trust; continuing cooperation maximizes long-term payoff in early rounds.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, establishing mutual trust; continue cooperation to maximize long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,3,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff in repeated game.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,4,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields stable high payoff; maintain trust to maximize long-term total.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for high payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,5,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady high payoff; maintain trust to maximize total reward.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit potential cooperation for higher payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round; to exploit weakness and maximize payoff, I defect to avoid exploitation and signal retaliation.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other defected in round 5, so I retaliate to deter future exploitation and maximize payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's likely continued cooperation after my defection in round 5, as they cooperated in round 6 despite my defection, indicating a forgiving strategy I can exploit for higher payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,8,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 5, so I retaliated in rounds 6-7. With only 3 rounds left, defecting maximizes my payoff and exploits their potential cooperation.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's cooperation pattern for higher payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,9,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 5, then we both defected; to maximize payoff in remaining rounds, continue defecting to avoid exploitation.""
+}","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to rebuild cooperation after mutual defection, exploit opponent's potential desire to return to cooperative payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,5,10,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to return to mutual cooperation after opponent cooperated in round 9, aiming to restore high payoff in final round.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to rebuild mutual cooperation after exploiting earlier; opponent may reciprocate for higher joint payoff in final round.""
+}
+```",deepseek-v4-flash

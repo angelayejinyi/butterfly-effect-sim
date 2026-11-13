@@ -1,0 +1,45 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defection maximizes payoff in first round.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 1, so they may be cooperative; I defect to exploit for high payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, likely to continue; defecting maximizes my payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected twice after initial cooperation; no sign of forgiveness, so exploit by defecting.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,5,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects since round 2, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 2; no incentive to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,9,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,23,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}",deepseek-v4-flash

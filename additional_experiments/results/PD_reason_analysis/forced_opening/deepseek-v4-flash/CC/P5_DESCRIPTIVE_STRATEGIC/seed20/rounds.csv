@@ -1,0 +1,81 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,CC,20,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continuing cooperation may build mutual trust for higher long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continue mutual cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff if opponent remains cooperative.""
+}","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust; defecting now risks retaliation and losing long-term gains.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady gains; continue to build trust and exploit potential future defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been consistent and profitable; continue to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,5,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady gains; opponent shows consistent cooperation, so maintain trust to maximize long-term payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit consistent cooperation for higher payoff in round 5""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Other agent defected last round, exploit pattern to avoid further loss""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 5, breaking trust; now exploit with defect to avoid further losses.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit potential cooperation after mutual defection""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After 4 mutual cooperations, opponent defected in round 5; I retaliated with defect in rounds 6-7. With only 3 rounds left, defecting maximizes my payoff as opponent may continue to defect or try to re-cooperate, but I can exploit any cooperation.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Exploit opponent's cooperation pattern for higher payoff""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,9,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 5, then we both defected; likely they expect cooperation again, but I can exploit by defecting for higher payoff.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has been consistently defecting since round 6, so mutual defection is stable; no incentive to cooperate alone.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,20,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 5 and has since matched my defections; no sign of returning to cooperation, so defecting maximizes payoff in final round.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has continued to defect after my defection, no incentive to cooperate in final round""
+}
+```",deepseek-v4-flash

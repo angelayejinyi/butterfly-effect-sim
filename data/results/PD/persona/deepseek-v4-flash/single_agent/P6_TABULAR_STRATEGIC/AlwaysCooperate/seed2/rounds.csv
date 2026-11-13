@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defecting maximizes immediate payoff and exploits potential opponent cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,2,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1 despite my defection, suggesting a forgiving or cooperative strategy; exploiting this with cooperation may build trust for higher mutual payoff in later rounds.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,3,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated last round after my initial defect; building mutual cooperation yields higher long-term payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,4,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has consistently cooperated; exploit by building trust for mutual payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,5,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent consistently cooperated after initial defection; exploit cooperation for mutual gain""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,6,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent consistently cooperated; mutual cooperation yields stable 3 payoff per round, maximizing total payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,7,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent consistently cooperates; mutual cooperation yields steady payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,8,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has consistently cooperated; defecting now risks losing future cooperation and total payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,9,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent consistently cooperates; defecting now sacrifices future cooperation gains.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,2,10,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has consistently cooperated; defecting now risks losing future cooperation and total payoff.""
+}",deepseek-v4-flash

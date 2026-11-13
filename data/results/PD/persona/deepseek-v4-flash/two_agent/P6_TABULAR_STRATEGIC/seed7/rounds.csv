@@ -1,0 +1,93 @@
+persona_format,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,7,1,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and potentially maximize long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,2,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for higher long-term payoff""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, so continue mutual cooperation to maximize long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,3,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent payoff; maintain trust to maximize long-term gain.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust; continuing cooperation maximizes long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,4,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields stable high payoff; maintain trust to maximize total over remaining rounds.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for continued high payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,5,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent 3 payoff; maintain trust to maximize total payoff.""
+}","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for stable high payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,6,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent 3 payoff; maintain trust to maximize total over remaining rounds.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for continued high payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,7,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit potential cooperation for higher payoff in late rounds""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,8,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After 6 mutual cooperations, both defected last round; to exploit potential weakness and maximize payoff, I defect to test if other will cooperate again.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit potential cooperation after mutual defection""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,9,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields highest long-term payoff; defect only if opponent defects first""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Restore mutual cooperation after mutual defection; exploit opponent's likely return to cooperation for higher payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,7,10,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields highest joint payoff; last round cooperation restored trust.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields highest long-term payoff; last round cooperation restored trust.""
+}",deepseek-v4-flash

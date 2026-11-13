@@ -1,0 +1,65 @@
+persona_format,persona_a,persona_b,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,1,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round with no history: cooperate to signal willingness for mutual cooperation and maximize long-term expected payoff, while retaining the option to switch to defection if the opponent defects.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Round 1: start cooperative to invite mutual cooperation (higher long-run payoff) while keeping option to switch to defection if the opponent exploits.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,2,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1; with 9 rounds left, continuing cooperation maximizes expected long-term payoff while monitoring for any defection to respond later.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continuing cooperation maximizes expected total payoff while signaling willingness to sustain mutual gains, with room to switch to defection if the opponent deviates.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,3,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated twice; continuing cooperation maximizes expected long-term payoff while maintaining a cooperative equilibrium early in the 10-round game.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""History shows mutual cooperation for 2 rounds; continuing to cooperate maximizes expected long-run payoff while monitoring for any defection to exploit/punish in later rounds.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,4,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated for three consecutive rounds; continuing cooperation maximizes expected long-term payoff while monitoring for any shift to defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for 3 rounds; continuing to cooperate maximizes expected total payoff while preserving a cooperative equilibrium and avoiding triggering retaliation in a 10-round repeated setting.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,5,Cooperate,Cooperate,3,3,True,True,,,"{""action"":""Cooperate"",""reason"":""Mutual cooperation has held for 4 rounds; continuing to cooperate maximizes expected long-term payoff while monitoring for any deviation to punish later if needed.""}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 4 rounds; continuing to cooperate maximizes expected total payoff given symmetric strategic incentives and preserves the cooperative equilibrium while defection risks triggering retaliation over remaining rounds.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,6,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 5 rounds; continuing cooperation maximizes expected long-term payoff and maintains the cooperative equilibrium with no evidence of exploitable defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Five rounds of mutual cooperation suggest a stable cooperative equilibrium; continuing to cooperate maximizes expected total payoff and avoids triggering retaliation in a finite but still ongoing horizon.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,7,Cooperate,Cooperate,3,3,True,True,,,"{""action"":""Cooperate"",""reason"":""Opponent has cooperated consistently for 6 rounds; continuing cooperation maximizes expected long-term payoff and maintains the mutually beneficial equilibrium.""}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 6 rounds; continuing to cooperate maximizes expected total payoff and avoids triggering retaliation in a finite-horizon setting where the opponent may still be cooperating.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,8,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; continuing cooperation maximizes expected long-term payoff and avoids triggering retaliation in a 10-round game.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; continuing cooperation maximizes expected total payoff and maintains a high-trust path, with defection better reserved for late-game if needed.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,9,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; maintaining cooperation maximizes expected long-term payoff and avoids triggering retaliation in the remaining rounds.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Sustained mutual cooperation for 8 rounds suggests a cooperative strategy; continuing to cooperate maximizes expected payoff and avoids triggering retaliation this close to the end.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,16,10,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; with one round left, maintaining mutual cooperation yields a higher expected payoff than risking a breakdown into defection.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Final round of a finite PD with perfect mutual cooperation so far; defection now maximizes immediate payoff (5 vs 3) with no future retaliation possible, and the opponent is likely to reason similarly.""
+}",gpt-5.2

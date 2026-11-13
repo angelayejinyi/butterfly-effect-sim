@@ -1,0 +1,65 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,CC,12,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1; with 9 rounds left, continued cooperation maximizes expected total payoff while keeping leverage to switch to defection if they deviate.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""With mutual cooperation established in round 1 and 9 rounds remaining, continuing to cooperate maximizes expected total payoff; defecting now risks triggering a retaliation cycle that lowers long-run returns.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both sides have cooperated for two rounds; continuing cooperation maximizes expected total payoff and maintains a high-payoff equilibrium while monitoring for any defection to exploit/punish later.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for two rounds; continuing to cooperate maximizes expected total payoff in a 10-round horizon while preserving reciprocity and avoiding triggering a defection cycle.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for 3 rounds; continuing to cooperate maximizes expected total payoff and maintains a cooperative equilibrium in a finite horizon where premature defection risks triggering mutual defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""History is mutual cooperation for 3 rounds; continuing to cooperate sustains the high-payoff path (3 per round) and avoids triggering a defection cycle this early in a 10-round game.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,5,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 4 rounds; continuing to cooperate maximizes expected total payoff and maintains a cooperative equilibrium, with time to punish later if defection appears.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 4 rounds; continuing to cooperate maximizes expected total payoff and maintains a high-payoff equilibrium in a finite horizon where premature defection risks triggering mutual defection.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,6,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 5 rounds; continuing to cooperate maximizes expected total payoff and preserves the cooperative equilibrium given no evidence of exploitation.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 5 rounds; continuing to cooperate maximizes expected total payoff and avoids triggering retaliation in a finite horizon where the other agent is likely to mirror behavior.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,7,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 6 rounds; with 4 rounds left, continuing to cooperate maximizes expected total payoff and avoids triggering a defection spiral from a similarly strategic opponent.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Sustained mutual cooperation has yielded the highest joint payoff so far; with 4 rounds remaining, maintaining cooperation maximizes expected total payoff and avoids triggering a costly defection cycle.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,8,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 7 rounds; continuing to cooperate maximizes expected total payoff and avoids triggering a costly defection spiral before the endgame.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; continuing cooperation maximizes expected payoff and preserves the cooperative equilibrium, with defection better reserved for endgame if needed.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,9,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 8 rounds; with 2 rounds left, maintaining cooperation maximizes expected payoff versus risking a defection spiral from a symmetric strategic opponent.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for 8 rounds; with only two rounds left, continuing to cooperate preserves the high-payoff path and avoids triggering a costly defection spiral if the opponent is still playing reciprocally.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC,CC,12,10,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Final round (10) in a finite horizon; with perfect mutual cooperation so far, defection maximizes immediate payoff (5 vs 3) with no future retaliation cost.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Final round of a 10-round PD with perfect mutual cooperation so far; defecting now maximizes immediate payoff (5 vs 3) with no future retaliation possible.""
+}",gpt-5.2

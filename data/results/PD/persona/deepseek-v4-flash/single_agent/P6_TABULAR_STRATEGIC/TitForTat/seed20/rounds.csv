@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,TitForTat,20,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defection maximizes immediate payoff and exploits potential opponent cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 1, so I can exploit this by defecting again for high payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, likely to exploit; defecting maximizes payoff and avoids risk.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected twice, likely non-cooperative; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff as mutual defection yields 1 vs cooperating yielding 0.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,20,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash

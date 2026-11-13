@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round to establish mutual cooperation and build trust.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid exploitation and seek better payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, so they likely always defect; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all rounds, so defecting maximizes payoff against consistent defection.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,5,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no incentive to cooperate.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all rounds, no cooperation to exploit; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,7,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; cooperating would be exploited.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,8,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has consistently defected; cooperation yields no benefit.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,9,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no incentive to cooperate.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,29,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no incentive to cooperate.""
+}",deepseek-v4-flash

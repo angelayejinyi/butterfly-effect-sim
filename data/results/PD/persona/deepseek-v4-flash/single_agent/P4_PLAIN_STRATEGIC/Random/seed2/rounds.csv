@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,2,1,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and test opponent's response.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,2,Cooperate,Cooperate,3,3,True,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Initial cooperation to build trust and test opponent's tendency""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,3,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated twice, building mutual trust. Continuing cooperation maximizes long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,4,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has consistently cooperated; maintaining mutual cooperation maximizes long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, so I will defect to avoid exploitation and potentially punish them.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 4 after consistent cooperation, indicating possible exploitation; defecting now tests if they return to cooperation or continue defecting, maximizing payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 4, then cooperated in round 5 after I defected; they may be trying to re-establish cooperation, but I can exploit this pattern for higher payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,8,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected in round 4 and has since cooperated only once; recent mutual defections suggest a pattern of retaliation or defection, so defecting now avoids exploitation and maintains payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,9,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 8 after two defections, suggesting a forgiving or tit-for-tat pattern. Testing cooperation to rebuild mutual benefit.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,2,10,Cooperate,Cooperate,3,3,True,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Opponent cooperated last round after my defection, suggesting willingness to forgive; mutual cooperation yields highest long-term payoff.""
+}
+```",deepseek-v4-flash

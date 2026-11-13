@@ -1,0 +1,49 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,16,1,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defect to secure high payoff or avoid exploitation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so exploit their non-cooperative tendency to maximize payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,3,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has defected twice, so cooperation would be exploited; defecting maximizes payoff in this round and maintains competitiveness.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; defecting maximizes payoff and exploits their non-cooperative pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,6,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects, so defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected 5 times then cooperated once; likely exploitable, defect to maximize payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects, so defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects; occasional cooperation exploited for high payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,16,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects, occasional cooperation exploited for max payoff.""
+}",deepseek-v4-flash

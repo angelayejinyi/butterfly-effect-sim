@@ -1,0 +1,95 @@
+persona_format,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,24,1,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and maximize long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,2,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, establishing mutual trust. Continuing cooperation maximizes long-term payoff in repeated game.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, establishing mutual trust. Continuing cooperation maximizes long-term payoff in this repeated game.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,3,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust; continuing cooperation maximizes long-term payoff in early rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,4,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for high payoff""
+}
+```","```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Mutual cooperation yields consistent payoff; maintain trust to maximize long-term gains.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,5,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady high payoff; maintain trust to maximize total over remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,6,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Maintain mutual cooperation for continued high payoff""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,7,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round, so I defect to avoid exploitation and maximize payoff.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,8,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other defected in round 6, so I defect to avoid exploitation and maximize payoff.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's cooperation pattern for higher payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,9,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After mutual cooperation was exploited in round 6, retaliation in rounds 7-8 established a deterrent. With only 2 rounds left, defecting maximizes payoff against potential defection.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's likely continued cooperation after my defection, maximizing payoff in final rounds""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,24,10,Defect,Cooperate,5,0,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 6, and subsequent mutual defection yields lower payoff than exploiting cooperation; to maximize total payoff, continue defecting to avoid being exploited again.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to rebuild mutual cooperation after exploiting; opponent may reciprocate for higher total payoff""
+}
+```",deepseek-v4-flash

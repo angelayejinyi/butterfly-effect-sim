@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,1,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defecting maximizes immediate payoff and avoids risk of opponent defecting.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so exploit potential cooperation later; start with defect to secure payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected twice; no sign of cooperation to exploit.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,4,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has consistently defected; testing if a cooperative move can trigger a change in their pattern.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all rounds, including after my cooperation; defecting maximizes my payoff against a consistent defector.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; cooperating yields 0, defecting ensures at least 1.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,AlwaysDefect,5,10,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```",deepseek-v4-flash

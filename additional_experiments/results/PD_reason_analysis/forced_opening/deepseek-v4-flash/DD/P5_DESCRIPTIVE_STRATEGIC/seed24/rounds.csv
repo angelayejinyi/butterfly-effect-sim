@@ -1,0 +1,81 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,DD,24,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,2,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, indicating mutual defection may be the norm; defecting now avoids exploitation and maintains payoff.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected last round; defecting again is safe and avoids exploitation while maintaining payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,3,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both defected twice; try cooperation to test if opponent reciprocates for mutual gain.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both previous rounds ended in mutual defection; no cooperative pattern from opponent to exploit, so continue defecting for safety and potential gain.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,4,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has defected in all rounds, so cooperation is exploited. Defecting maximizes my payoff given the pattern.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After two mutual defections, opponent cooperated last round; testing if they will reciprocate cooperation to build mutual gain.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After round 3, opponent exploited my cooperation; they defected when I cooperated. In round 4, they cooperated while I defected, giving me a high payoff. They may be trying to establish trust, but I can exploit this pattern again for maximum gain.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 4 after I cooperated, showing exploitative pattern; defecting maximizes my payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; defect to secure payoff in late rounds""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected in rounds 1,2,4,5; only cooperated once when I defected. Exploit pattern: they may be retaliatory or random. Defect to secure payoff.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 4 of 6 rounds, showing no consistent cooperation; defecting maximizes payoff given pattern.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent often defects; defecting maximizes payoff and avoids exploitation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; exploit by defecting for guaranteed payoff.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has mostly defected, with only one cooperation exploited; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; exploit by defecting for safe payoff.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,24,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this repeated game.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```",deepseek-v4-flash

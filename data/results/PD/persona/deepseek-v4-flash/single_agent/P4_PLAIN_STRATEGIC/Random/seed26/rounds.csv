@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,26,1,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and encourage mutual benefit.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,2,Cooperate,Cooperate,3,3,True,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1, signaling potential for mutual cooperation; I'll start with cooperation to build trust and maximize long-term payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,3,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently; mutual cooperation yields highest long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,4,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, so I will defect to avoid exploitation and potentially trigger a return to mutual cooperation.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 3, so I defect to avoid exploitation and maximize payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after my defection, indicating exploitable pattern; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,7,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after my defection in rounds 4-5, but then defected in round 6, suggesting they may be retaliating. To avoid exploitation and secure payoff, I defect.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, so exploit with defect for high payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, so exploit this pattern for high payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,26,10,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown inconsistency, but after my defections they often cooperate; exploiting this pattern maximizes payoff.""
+}",deepseek-v4-flash

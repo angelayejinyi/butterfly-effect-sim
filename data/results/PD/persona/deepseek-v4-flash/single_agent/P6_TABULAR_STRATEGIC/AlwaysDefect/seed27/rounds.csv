@@ -1,0 +1,51 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start cooperatively to test opponent's response and build potential mutual benefit.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so to avoid exploitation and maximize payoff, I will defect this round.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,3,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, so cooperation is exploited; defecting maximizes payoff and avoids further loss.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this competitive repeated game.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,27,10,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and overall.""
+}
+```",deepseek-v4-flash

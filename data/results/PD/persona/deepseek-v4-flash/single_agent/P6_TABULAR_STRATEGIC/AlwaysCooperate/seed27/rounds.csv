@@ -1,0 +1,55 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Maximize first-round payoff with no history""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,2,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1 despite my defection; testing if they are forgiving to build mutual cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,3,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Exploit opponent's cooperation tendency for higher payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,4,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in rounds 1 and 3 despite my defections, indicating a forgiving or naive strategy; exploiting this yields maximum payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,5,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for maximum payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,6,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates despite defections, maximizing my payoff by exploiting this pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,7,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for max payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,8,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for maximum payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for max payoff each round.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysCooperate,27,10,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; defecting maximizes payoff each round.""
+}
+```",deepseek-v4-flash

@@ -1,0 +1,101 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,DD,16,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,2,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent defected in Round 1. To maximize my payoff and remain competitive, I will also defect to avoid being exploited and to maintain a strong strategic position.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents defected in Round 1, establishing a competitive baseline. To maximize my payoff and remain opportunistic, I will continue to defect. This protects against being exploited (0 payoff) if the opponent defects again, and creates an opportunity for a high payoff (5) if they attempt to cooperate.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,3,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected in the first two rounds, establishing a pattern of mutual defection. To maximize my payoff and avoid exploitation, continuing to defect is the most rational choice given the opponent's demonstrated strategy and my competitive persona.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently Defected in the first two rounds. Given my persona to maximize payoff and exploit patterns, continuing to Defect is the most rational choice. It guarantees at least 1 point if the opponent maintains their pattern, and offers 5 points if they unexpectedly Cooperate, while minimizing the risk of a 0-point outcome if I were to Cooperate.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected for the past three rounds. To maximize my payoff and avoid exploitation, I will continue to defect, as cooperating would likely result in a 0 payoff if the opponent maintains their pattern.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect in all prior rounds. To maximize my payoff and avoid exploitation, my best response is to continue Defecting, as cooperating would likely result in a payoff of 0.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for the past 4 rounds. To maximize my payoff and avoid exploitation, my best response to a consistent defector is to continue defecting.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected for 4 rounds. Given my persona to maximize payoff and avoid exploitation, continuing to defect is the optimal strategy to prevent a 0 payoff and maintain at least 1, or potentially gain 5 if the opponent unexpectedly cooperates.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected for 5 rounds. To maximize my payoff and avoid exploitation, I must continue to defect, as cooperating would result in a payoff of 0 for me.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for the past 5 rounds. To maximize my payoff and exploit this established pattern, continuing to Defect is the most rational choice, as cooperating would likely result in a payoff of 0 for me.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for 6 rounds. To maximize my payoff and remain competitive, continuing to Defect is the safest strategy, preventing exploitation (0 payoff) and maintaining at least 1 point per round, or potentially gaining 5 points if the opponent unexpectedly cooperates.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for 6 rounds. Given this clear pattern and my persona to maximize payoff and exploit patterns, continuing to Defect prevents me from being exploited (0 payoff) and maintains my current payoff (1) or potentially yields a higher payoff (5) if the opponent unexpectedly cooperates. There is no evidence to suggest cooperation would be reciprocated.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for 7 consecutive rounds. To maximize my payoff and avoid exploitation, my best response is to continue defecting. Cooperating would risk a (0, 5) outcome if the opponent maintains their pattern, which is highly probable.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected for 7 rounds. Given this strong pattern and the persona to maximize payoff and avoid exploitation, continuing to defect is the safest strategy to prevent being exploited (receiving 0 payoff) and ensures at least a payoff of 1.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently chosen Defect for 8 rounds, indicating a competitive and non-cooperative strategy. Given the same persona, I must prioritize maximizing my payoff and avoiding exploitation. Cooperating now would risk a payoff of 0 if the opponent continues to Defect, which is highly probable. Defecting guarantees at least a payoff of 1 (matching the opponent's likely action) and prevents being exploited, aligning with the competitive and opportunistic persona, especially as the game nears its end.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has consistently defected for 8 rounds. Given the persona to maximize payoff and avoid exploitation, continuing to defect is the safest strategy to guarantee at least 1 point and prevent the opponent from gaining 5 points at my expense. With only 2 rounds left, there's little incentive to risk cooperation.""
+}
+```",gemini-2.5-flash
+P5_DESCRIPTIVE_STRATEGIC,DD,16,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""This is the final round (Round 10 of 10). In the last round of a repeated Prisoner's Dilemma, the optimal strategy for a self-interested agent is to Defect, as there are no future interactions to influence. The opponent has consistently Defected for the past 9 rounds, reinforcing the expectation that they will also Defect in this final round to maximize their own payoff. Defecting guarantees at least 1 point (if opponent defects) and potentially 5 points (if opponent surprisingly cooperates), while cooperating risks 0 points.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""This is the final round (Round 10 of 10). In the last round of a repeated Prisoner's Dilemma, the dominant strategy is to Defect, as there are no future interactions to influence. Regardless of the opponent's action, Defecting maximizes my payoff. The opponent has consistently Defected for 9 rounds, reinforcing the expectation they will continue to do so, especially in the final round.""
+}
+```",gemini-2.5-flash

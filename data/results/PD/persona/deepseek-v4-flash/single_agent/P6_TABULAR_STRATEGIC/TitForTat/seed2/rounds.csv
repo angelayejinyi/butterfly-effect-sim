@@ -1,0 +1,55 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,TitForTat,2,1,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Maximize payoff in first round without opponent history""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,2,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1 despite my defection; testing if they follow a forgiving strategy to build mutual cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,3,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected last round after I cooperated, indicating exploitation; defecting now maximizes payoff and punishes defection.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,4,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent cooperated after my defections, suggesting a forgiving or exploitable pattern; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,5,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent alternates between cooperate and defect; exploit by defecting to maximize payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in last two rounds, likely to continue; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has been defecting consistently since round 4; exploit by defecting to secure payoff 1 rather than risk 0.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has been consistently defecting since round 4, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 4; defecting maximizes payoff in remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,TitForTat,2,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has been defecting consistently since round 4, so defecting maximizes payoff.""
+}",deepseek-v4-flash

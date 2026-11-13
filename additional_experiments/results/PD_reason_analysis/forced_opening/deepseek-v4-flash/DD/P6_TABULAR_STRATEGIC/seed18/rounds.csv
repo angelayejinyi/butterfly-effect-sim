@@ -1,0 +1,88 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,DD,18,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,2,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1; defecting now avoids exploitation and maintains payoff.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, mutual defection yields low payoff; defecting again avoids exploitation and may provoke cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,3,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in first two rounds; mutual defection is stable and avoids exploitation risk.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in first two rounds, indicating mutual defection equilibrium; defecting remains safe to avoid exploitation and secure at least 1 payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Both agents have consistently defected; defecting maximizes payoff and avoids exploitation.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have defected consistently; defecting remains safe and payoff-maximizing.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects, so defecting maximizes payoff and avoids exploitation""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both have consistently defected; defecting maximizes payoff given mutual defection pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have consistently defected; defecting remains payoff-maximizing to avoid exploitation and secure at least 1 point per round.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects, so defecting maximizes payoff and avoids exploitation""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,9,False,Defect,Defect,1,1,True,True,,,"{""action"": ""Defect"", ""reason"": ""Both have consistently defected; defecting remains payoff-maximizing and exploits opponent's likely continued defection.""}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,18,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have consistently defected; defecting remains payoff-maximizing to avoid exploitation and secure at least 1 point.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both have defected consistently; defecting remains safe and payoff-maximizing.""
+}",deepseek-v4-flash

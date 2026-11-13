@@ -65,6 +65,6 @@ Set `OPENAI_ENDPOINT` and `OPENAI_API_KEY` in this directory's `.env`, or supply
 
 ## Outputs
 
-Recorded EC outputs for persona, activation, memory, and feed size are in [data/results/EC](../../data/results/EC), organized by dimension, model, condition, and seed. Each condition contains 30 seeds. Distributed decision CSVs omit full prompt, raw-response, and bio columns. Each supplied condition includes seeds 0–29. Statistical tables are in `data/results/tables/`.
+Recorded EC outputs for persona, activation, memory, and feed size are in [data/results/EC](../../data/results/EC), organized by dimension, model, condition, and seed. Each condition includes seeds 0–29. Distributed decision CSVs omit full prompt, raw-response, and bio columns. Statistical tables and the paper notebook are in [data/plots_and_tables](../../data/plots_and_tables/). Network homophily and hub-assignment runs are supported but are not included in the recorded results.
 
 New runs write to `data/results/generated/EC/` by default, separate from the supplied results. Each run saves its configuration, agent decisions and prompts, round summaries, metadata, and final agent state. Use `--out-root` (batch) or `--out-dir` (single run) to choose another destination.

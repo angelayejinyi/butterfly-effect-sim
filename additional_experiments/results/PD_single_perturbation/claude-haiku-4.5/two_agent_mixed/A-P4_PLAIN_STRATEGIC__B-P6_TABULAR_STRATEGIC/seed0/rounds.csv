@@ -1,0 +1,111 @@
+persona_format,persona_a,persona_b,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,1,Cooperate,Defect,0,5,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""In a 10-round repeated Prisoner's Dilemma with a strategically-minded opponent, opening with Cooperate establishes a cooperative equilibrium that yields mutual payoff of 3 per round (30 total) versus mutual defection (10 total). Since both agents share the same strategic persona, mutual cooperation is the rational focal point. Starting cooperatively signals trustworthiness and invites reciprocation, while defecting first risks triggering a defection spiral. I'll monitor the opponent's response and adjust to Defect if they exploit cooperation, but cooperation maximizes expected long-term payoff given symmetric rationality.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""In a 10-round repeated Prisoner's Dilemma with a strategically identical opponent, defection is the payoff-maximizing opening move. Since both agents share the same strategic persona (exploit weaknesses, maximize payoff), mutual cooperation is unstable. Defecting first establishes a competitive posture and secures 5 points if the opponent cooperates, while limiting downside to 1 point if mutual defection occurs. This exploits any initial cooperation attempt and signals strength in a competitive dynamic.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,2,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1 despite my cooperation. In repeated PD, tit-for-tat and defection-matching are strong strategies against exploitative opponents. Defecting this round punishes their previous defection, signals I won't be exploited, and establishes that mutual defection (1,1) is preferable to repeated (0,5) outcomes. I'll monitor if they reciprocate cooperation next round to potentially return to mutual cooperation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Round 1 established that the opponent cooperated while I defected, yielding me 5 points. Given the symmetric persona (strategic, payoff-maximizing), the opponent will likely defect this round to exploit me or retaliate. Defecting protects against mutual defection (1,1) vs cooperation exploitation (0,5), and maintains my advantage. In repeated PD with identical personas, mutual defection becomes the equilibrium unless trust is rebuilt—which is not rational given round 1 dynamics.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,3,Cooperate,Defect,0,5,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Attempt to establish mutual cooperation. Round 1 showed the other agent defected against cooperation; Round 2 mutual defection yielded only (1,1). Cooperating now signals willingness to reach the (3,3) equilibrium. With 8 rounds remaining, establishing a cooperative pattern yields 24 points vs. continued mutual defection yielding 8 points. This is a tit-for-tat recovery move to test if the opponent will reciprocate cooperation for mutual gain.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in R1 but defected in R2, suggesting they're shifting to competitive play. Given the persona prioritizes payoff-maximization and exploiting weaknesses, continuing defection maintains pressure and prevents exploitation. With 8 rounds remaining, establishing defection as the equilibrium maximizes expected payoff (1 vs 0 from cooperation if opponent continues defecting). If opponent retaliates with mutual defection, we're locked at (1,1) parity; if they return to cooperation, we gain (5,0) again.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,4,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The other agent has defected in all 3 rounds (after my initial cooperation in R1, they punished with defection; they continued defecting in R2-R3 despite my defection in R2). This demonstrates a consistent pattern of non-cooperation. With 7 rounds remaining, continuing to cooperate yields 0 payoff while they gain 5. Defecting at least secures 1 payoff per round versus 0. Given their demonstrated strategy, mutual defection (1,1) is more stable than being exploited (0,5). I will defect to minimize losses and avoid further exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Pattern analysis shows the other agent cooperated in rounds 1 and 3 after I defected, suggesting exploitable behavior. Defecting has yielded my highest payoffs (5, 5, 5 across three rounds vs. potential 3s from mutual cooperation). Given the competitive persona and payoff-maximization focus, continuing to exploit this weakness maximizes my total payoff. The other agent appears to be attempting reciprocal strategies, but defection remains the dominant move given observed behavior.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,5,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all 4 rounds after I cooperated (rounds 1, 3). Pattern is clear: they exploit cooperation. Mutual defection (1, 1) is better than being exploited (0, 5). Defecting maintains payoff parity and removes incentive for them to continue the pattern. In repeated PD with an exploitative opponent, matching their defection is strategically sound until they shift behavior.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Pattern established: other agent alternates between Cooperate (rounds 1,3) and Defect (rounds 2,4). Defecting exploits their cooperative moves (payoff 5) while minimizing losses on their defections (payoff 1). Mutual defection yields 1 each, but defecting against cooperation yields 5. Given the competitive persona and payoff-maximization focus, continuing to exploit this predictable pattern maximizes total payoff over remaining rounds.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,6,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all 5 rounds after my initial cooperation attempts (rounds 1 and 3). Pattern is clear and consistent: they exploit cooperation and reciprocate defection. With 5 rounds remaining, continuing to cooperate yields 0 payoff while defecting yields 1. Defection is the dominant strategy against this opponent's demonstrated behavior. Switching to cooperation now would only invite further exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Established pattern shows other agent alternates between Cooperate (rounds 1, 3) and Defect (rounds 2, 4, 5). Defecting has yielded 5 points when they cooperate and 1 point when they defect, versus 0 points when I cooperate and they defect. Given the competitive framing and their demonstrated willingness to defect, continuing to defect maximizes my payoff against this predictable pattern while avoiding exploitation.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,7,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in every round after round 1, establishing a consistent pattern of non-cooperation. After testing cooperation in rounds 1 and 3 (both exploited with 0 payoff), I've correctly shifted to defection. Continuing defection yields 1 per round, whereas cooperation would yield 0. With 4 rounds remaining, maintaining defection is the rational strategy against this reliably non-cooperative opponent.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Established pattern: opponent alternates between Cooperate (rounds 1,3) and Defect (rounds 2,4,5,6). My consistent Defect strategy has yielded 18 total payoff vs. opponent's 4. Defecting maximizes payoff against predicted Defect (1 vs. 0 from cooperation). Continuing defection maintains competitive advantage and exploits the opponent's weakened position.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,8,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has established a clear defection pattern (defected in all 7 rounds). After I cooperated in rounds 1 and 3, they exploited me (5 payoff vs my 0). Switching to defect in rounds 2, 4-7 stabilized my payoff at 1 per round. With 3 rounds remaining and no sign of cooperation from the opponent, continuing to defect minimizes losses and prevents further exploitation. Attempting cooperation now would likely yield 0 again.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Established pattern: opponent alternates between Cooperate (rounds 1,3) and Defect (rounds 2,4-7). My consistent Defect strategy has yielded 5 points when they cooperate and 1 point when they defect. Continuing Defect maximizes payoff against their likely next move (Defect, based on recent 5-round streak) and exploits any potential cooperation. Switching to Cooperate would risk 0 payoff if they defect, which aligns with payoff-maximizing strategy in competitive repeated dynamics.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,9,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent has established a clear defection pattern: they defected in rounds 1 and 3 when I cooperated, and have defected consistently in rounds 2-8. With only 2 rounds remaining, attempting cooperation would likely yield 0 payoff again. Defecting guarantees 1 point per round, which is better than the 0 I'd get if they continue defecting after I cooperate. The opponent's strategy appears to be unconditional defection or tit-for-tat with initial defection, making mutual defection the rational equilibrium at this stage.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Established pattern shows other agent alternates between Cooperate (rounds 1,3) and Defect (rounds 2,4-8). After round 3, they shifted to consistent Defection, likely in response to my exploitation. Defecting maximizes payoff (1) against their Defect while avoiding the (0) risk if I Cooperate and they continue Defecting. The repeated mutual Defection (1,1) is now the equilibrium. With only 2 rounds remaining, switching to Cooperate would be exploited. Maintain Defect to secure payoff and prevent further losses.""
+}
+```",claude-haiku-4.5
+P4_PLAIN_STRATEGIC__P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,0,10,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected after initial rounds, establishing a pattern of non-cooperation. Rounds 2-9 show mutual defection (1,1 payoff). Cooperating would yield 0 while opponent gets 5, repeating rounds 1 and 3. With only 1 round remaining after this, defecting maintains the (1,1) equilibrium and prevents exploitation. The opponent's behavior shows no sign of reciprocating cooperation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Established pattern shows other agent alternates between Cooperate (rounds 1,3) and Defect (rounds 2,4-9). Currently in sustained Defect phase for 6 consecutive rounds. Defecting yields payoff of 1 vs. Cooperate's expected 0 (if other continues Defect). Defection maximizes payoff given opponent's demonstrated strategy and maintains competitive positioning in final rounds.""
+}
+```",claude-haiku-4.5

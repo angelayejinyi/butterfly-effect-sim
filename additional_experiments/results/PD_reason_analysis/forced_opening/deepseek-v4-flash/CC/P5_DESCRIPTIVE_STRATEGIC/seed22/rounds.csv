@@ -1,0 +1,77 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,CC,22,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Initial cooperation was reciprocated; continue to build trust and maximize mutual payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; I'll continue cooperating to build trust and see if the pattern holds, aiming for mutual benefit.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,3,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Both cooperated in first two rounds, establishing mutual trust. Continuing cooperation maximizes long-term payoff if opponent maintains pattern.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust; I'll continue cooperating to maintain cooperation and maximize long-term payoff, but watch for any defection.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,4,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady gains; opponent shows no defection pattern yet.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent gains; maintain trust to maximize long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,5,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent gains; exploit only if opponent defects first.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; no defection pattern observed yet.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit consistent cooperation for higher payoff in later rounds""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit consistent cooperation for higher payoff in later rounds""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After 5 mutual cooperations, you defected in round 6 and the other also defected. To maximize payoff, exploit potential cooperation or avoid being exploited; defecting now tests if they will forgive or retaliate.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""After 5 mutual cooperations, you defected last round and opponent retaliated. To maximize payoff, continue defecting to avoid being exploited, as opponent may now expect defection.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After mutual cooperation for 5 rounds, opponent matched my defection in rounds 6-7, indicating a tit-for-tat pattern. To maximize payoff, I will continue defecting to exploit potential cooperation if opponent returns to cooperate, or secure at least 1 if they defect.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""History shows mutual cooperation broke at round 6; opponent matched my defection, suggesting they are now in tit-for-tat mode. To maximize payoff, I continue defecting to avoid being exploited, as they will likely defect again.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,9,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection, I try to re-establish cooperation for higher mutual payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection, opponent may expect continued defection; a cooperative move could exploit a potential return to cooperation pattern for higher payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,22,10,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""History shows mutual cooperation is stable and profitable; defecting risks retaliation and lower long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields highest joint payoff; opponent reciprocated last round, suggesting trust can be rebuilt.""
+}",deepseek-v4-flash

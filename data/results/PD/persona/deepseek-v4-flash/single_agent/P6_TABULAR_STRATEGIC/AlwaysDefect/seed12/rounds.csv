@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,1,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defection maximizes immediate payoff and avoids risk of opponent defecting.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,2,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round mutual defection yields low payoff; testing cooperation to seek higher mutual gain.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round despite my cooperation, so exploit their defection tendency to avoid being exploited again.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected twice and exploited cooperation; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; cooperating yields 0, defecting yields at least 1.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all rounds except round 2, indicating a defection-prone policy; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; cooperating yields 0, defecting yields 1.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,AlwaysDefect,12,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff.""
+}",deepseek-v4-flash

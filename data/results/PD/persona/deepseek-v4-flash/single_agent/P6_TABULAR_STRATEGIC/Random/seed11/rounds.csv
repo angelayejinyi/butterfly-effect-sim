@@ -1,0 +1,48 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,11,1,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defecting maximizes immediate payoff and exploits potential opponent cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so to exploit weakness and maximize payoff, I continue defecting.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected twice, so exploiting with defect ensures safety and payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,4,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in this round and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,5,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent defected first 3 rounds, then cooperated once; likely exploitable but unreliable. Defecting maximizes payoff given uncertainty.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after defections, likely exploitable; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,7,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects; exploit by defecting for higher payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,8,Defect,Cooperate,5,0,True,,"{""action"": ""Defect"", ""reason"": ""Opponent has shown inconsistency, but defecting maximizes my payoff given their past cooperation and defection patterns.""}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, maximizing my payoff by exploiting this pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,11,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown inconsistency, but defecting maximizes payoff given past exploitation.""
+}",deepseek-v4-flash

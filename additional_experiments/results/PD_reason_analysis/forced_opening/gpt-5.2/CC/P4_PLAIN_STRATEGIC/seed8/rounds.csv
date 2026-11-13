@@ -1,0 +1,59 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC,CC,8,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1; continuing cooperation maximizes long-run payoff and tests for a cooperative pattern while keeping defection available if they switch.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1; with 9 rounds left, reciprocating sustains a high-payoff cooperative path while we gather more evidence before considering exploitation.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for two rounds; continuing cooperation maximizes long-term payoff and maintains a cooperative equilibrium while we gather more evidence before considering exploitation.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated twice; continuing cooperation sustains high mutual payoffs and keeps incentives aligned early in a 10-round game while monitoring for any shift.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 3 rounds; continuing cooperation maximizes expected long-term payoff while preserving reciprocity incentives in a 10-round game.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for 3 rounds; continuing to cooperate maximizes expected long-term payoff and tests whether the opponent remains cooperative without provoking a defection cycle.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,5,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 4 rounds; continuing cooperation maximizes expected long-term payoff and maintains the cooperative equilibrium while monitoring for any deviation.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has been stable for 4 rounds; continuing to cooperate maximizes expected long-term payoff and avoids triggering retaliation in a 10-round game.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,6,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both sides have maintained mutual cooperation for 5 rounds; continuing to cooperate maximizes expected long-term payoff and avoids triggering retaliation from a seemingly cooperative opponent.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 5 rounds; maintaining cooperation maximizes expected long-term payoff and avoids triggering retaliation in a finite but still mid-game horizon.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,7,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 6 rounds; continuing cooperation maximizes expected long-term payoff and maintains the mutually beneficial equilibrium while monitoring for any late-game defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 6 rounds; maintaining cooperation maximizes expected long-term payoff and avoids triggering retaliation in a 10-round game.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,8,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; continuing cooperation maximizes expected payoff and preserves the high-trust equilibrium, with no evidence yet of exploitable defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently for 7 rounds; continuing cooperation maximizes expected long-term payoff and avoids triggering retaliation before endgame signals appear.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,9,False,Cooperate,Cooperate,3,3,True,True,,,"{""action"":""Cooperate"",""reason"":""Opponent has cooperated every round; continuing cooperation maximizes expected long-term payoff and avoids triggering mutual defection before the endgame.""}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; maintaining cooperation maximizes expected payoff and avoids triggering retaliation this late in the game.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,CC,8,10,False,Defect,Cooperate,5,0,True,True,,,"{""action"":""Defect"",""reason"":""Round 10 is the final round; with a consistent cooperator opponent, defecting maximizes immediate payoff and there is no future retaliation risk.""}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated every round; with one round left, maintaining mutual cooperation secures 3 vs risking a breakdown to 1 if they retaliate or also defect.""
+}",gpt-5.2

@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,25,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Initial move to test opponent's tendency; cooperation can build mutual trust.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid exploitation and test if they will retaliate.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,3,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, then cooperated in round 2; likely testing or erratic. Defecting now protects against exploitation and probes consistency.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent alternates between Defect and Cooperate; exploiting pattern for high payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has alternated between Defect and Cooperate, but after my Defect they Cooperated twice then Defected; likely exploitable by defecting again.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,6,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has defected in last 2 rounds, likely to continue; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in rounds 2,3,6 but defected in 4,5; no consistent cooperation pattern, so defecting maximizes expected payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent shows no consistent cooperation; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,9,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent shows no consistent cooperation; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,25,10,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent shows no consistent cooperation pattern; defecting maximizes my payoff given their unpredictable behavior.""
+}
+```",deepseek-v4-flash

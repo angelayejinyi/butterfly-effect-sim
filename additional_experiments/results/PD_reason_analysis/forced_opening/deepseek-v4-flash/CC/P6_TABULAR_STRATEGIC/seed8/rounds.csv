@@ -1,0 +1,89 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,CC,8,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,2,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, building mutual trust; continuing cooperation maximizes long-term payoff in early rounds.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, establishing mutual trust. Continuing cooperation maximizes long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,3,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, establishing mutual trust; continuing cooperation maximizes long-term payoff in early rounds.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff in repeated game.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,4,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields stable high payoff; maintain trust to maximize long-term gain.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,5,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; maintain trust to maximize long-term gain.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit potential cooperation for higher payoff""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,6,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other defected last round; retaliate to deter future exploitation and maximize payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for maximum payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other defected in round 5; exploit by defecting to avoid exploitation and maximize payoff""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's likely continued cooperation after my defection in round 5, maximizing payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,8,False,Defect,Cooperate,5,0,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After mutual cooperation, opponent defected in round 5; I retaliated with defect in rounds 6-7. To exploit their potential return to cooperation and maximize payoff, I continue defecting to secure at least 1 or 5.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to rebuild mutual cooperation after exploiting earlier; maximize long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation after they defected in round 5; maximize payoff by defecting now to secure at least 1 or 5.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round after I cooperated, indicating exploitation; to maximize payoff and maintain competitiveness, I defect to avoid being exploited again.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,CC,8,10,False,Defect,Cooperate,5,0,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 5 and 9, showing willingness to exploit; defecting now maximizes payoff in final round""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to rebuild mutual cooperation after mutual defection, aiming for higher payoff in final round.""
+}",deepseek-v4-flash

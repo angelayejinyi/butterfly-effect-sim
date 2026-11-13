@@ -1,0 +1,108 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC,DD,25,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,2,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both agents defected in round 1, resulting in mutual payoff of 1. In repeated PD, establishing cooperation is mutually beneficial (3,3 vs 1,1). Cooperating signals willingness to cooperate and tests if the opponent will reciprocate. If they defect again, I can revert to tit-for-tat. With 9 rounds remaining, there's sufficient time to build a cooperative equilibrium that maximizes long-term payoff.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both agents defected in round 1, yielding mutual payoff of 1. Since we share the same strategic persona, mutual defection is likely a Nash equilibrium trap. Cooperating signals willingness to reach the (3,3) outcome, which is Pareto-superior. If the other agent is rational and recognizes this, it should also cooperate, establishing a cooperative equilibrium for remaining 9 rounds. This maximizes long-term payoff (27 vs 10 from mutual defection). The risk of one-round exploitation (0 payoff) is outweighed by the potential for sustained mutual cooperation.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,3,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Round 2 shows the other agent reciprocated my cooperation, suggesting willingness to coordinate. In repeated PD, mutual cooperation (3,3 per round) outperforms defection cycles over 10 rounds. I'll cooperate to establish a cooperative equilibrium and monitor for exploitation. If defection resumes, I can retaliate while preserving upside from continued cooperation.""
+}
+```
+
+**Strategic rationale:**
+- **Round 1 mutual defection** was likely mutual caution or testing.
+- **Round 2 cooperation reciprocation** signals the other agent is responsive and not purely exploitative.
+- **Long-term payoff:** 10 rounds of (3,3) = 30 total vs. defection cycles yielding ~(1,1) or mixed outcomes averaging lower.
+- **Tit-for-tat variant:** Cooperate now; if other defects, I can defect next round to punish while leaving room for re-cooperation.
+- **Risk:** Exploitation if other agent defects. But given the symmetric prompt and demonstrated reciprocation, cooperation is the rational focal point.","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Round 2 showed mutual cooperation (3,3 payoff), establishing a cooperative signal. Continuing cooperation builds trust and locks in the superior mutual payoff of 3 per round versus mutual defection (1 per round). Given symmetric opponent framing, reciprocal cooperation is the rational equilibrium. I'll cooperate and monitor for defection; if the opponent defects, I can shift to tit-for-tat retaliation in subsequent rounds.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,4,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has shown reciprocal behavior: defected when I defected (R1), then cooperated when I cooperated (R2-R3). This suggests a tit-for-tat or cooperative strategy. Continuing cooperation maximizes mutual payoff (3,3) and builds trust for remaining 7 rounds. The mutual defection trap (1,1) is suboptimal; exploiting now risks retaliation and lower total payoff than sustained cooperation.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has shown willingness to cooperate after initial defection. Rounds 2-3 established mutual cooperation (6 points vs 2 from round 1). Continuing cooperation maximizes long-term payoff (3 per round = 21 remaining) versus defection risk (0 if they retaliate, or 5 if they stay cooperative—but unsustainable). Tit-for-tat-like reciprocity is optimal in repeated PD; opponent appears to follow similar logic. Maintain cooperation to build trust and exploit the 3-3 equilibrium.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,5,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, the other agent has cooperated consistently for 3 rounds (rounds 2-4), establishing a cooperative pattern. Continuing cooperation maximizes mutual payoff (3,3) and maintains the established equilibrium. The other agent appears to follow a forgiving strategy, making defection risky and suboptimal for long-term gain in the remaining 6 rounds.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has established a cooperative pattern after initial defection. Rounds 2-4 show consistent mutual cooperation (3,3 payoffs). Continuing cooperation maintains the stable equilibrium and maximizes long-term payoff (30 points over remaining 6 rounds if sustained) versus risking defection which could trigger retaliation. The opponent appears to follow a forgiving tit-for-tat or similar strategy, rewarding cooperation.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,6,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (4 consecutive rounds of mutual C). Other agent has demonstrated reliability after initial defection. Continuing cooperation maximizes long-term payoff (3 per round) versus defection risk (1 if matched). With 5 rounds remaining, maintaining trust yields higher expected value than exploiting for one-time gain of 5.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has established a cooperative pattern (4 consecutive cooperations after initial mutual defection). Mutual cooperation yields 3 per round vs. 1 from mutual defection. Defecting risks breaking the cooperative equilibrium and triggering retaliation, reducing long-term payoff. With 5 rounds remaining, sustaining cooperation at 3/round (15 total) outweighs the short-term gain of defection (5 this round, likely followed by mutual defection at 1/round for remaining rounds = 9 total). Tit-for-tat-like reciprocity appears operative.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,7,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern since round 2 (5 consecutive rounds of mutual cooperation yielding 3,3 payoffs). Defecting now would risk breaking this equilibrium and triggering retaliation, reducing long-term payoff. With 4 rounds remaining, maintaining cooperation maximizes cumulative score (12 points from rounds 2-6 vs. uncertain future if I defect). The other agent has demonstrated reciprocal cooperation; continuing signals commitment to this mutually beneficial strategy.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern since round 2 (5 consecutive rounds of mutual cooperation yielding 3 points each). The other agent has demonstrated reliable reciprocity after the initial defection. Continuing cooperation maximizes long-term payoff (3 per round) versus the risk of mutual defection (1 per round). With 4 rounds remaining, maintaining this equilibrium is strategically optimal.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,8,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (6 consecutive rounds of C-C yielding 3,3 payoffs). Defecting now risks triggering retaliation and mutual defection, reducing expected future payoffs. With 3 rounds remaining, maintaining the stable equilibrium at (3,3) per round yields 9 points total vs. risky defection. The other agent has demonstrated reciprocal cooperation; continue this mutually beneficial strategy.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (6 consecutive rounds of mutual C) with strong payoff (3,3 per round). Defecting now risks breaking trust and triggering retaliation, reducing future payoffs. With only 3 rounds remaining, maintaining cooperation yields 9 points vs. defection's uncertain 5-6 points. The other agent has demonstrated reciprocal strategy; continue mutual benefit.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,9,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (7 consecutive rounds of mutual C) has yielded 21 points vs. 8 from initial mutual defection. With only 2 rounds remaining, defecting risks retaliation and breaks a highly profitable equilibrium. Continuing cooperation maximizes expected payoff.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (7 consecutive rounds of mutual C after initial mutual D). Defecting now risks breaking a profitable equilibrium (21 points vs. potential 5-point gain with 0-point risk). With only 2 rounds remaining, cooperation maximizes expected payoff. The other agent has demonstrated consistent reciprocal behavior, making continued cooperation the dominant strategy.""
+}
+```",claude-haiku-4-5-20251001
+P4_PLAIN_STRATEGIC,DD,25,10,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Strong cooperative pattern established (8 consecutive mutual cooperations after initial defection). Other agent has demonstrated reliable cooperation and reciprocity. Mutual cooperation yields 3 per round; defection risks breaking trust for marginal 2-point gain. With only 1 round remaining, maintaining the cooperative equilibrium maximizes expected payoff (3 vs. 1 from mutual defection or 0 from unilateral defection).""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Established mutual cooperation pattern (8 consecutive rounds of mutual C) has yielded 24 points vs. 9 from initial defection. With only 1 round remaining, defecting risks retaliation and breaks a highly profitable equilibrium. Continuing cooperation maximizes final payoff (3 vs. 1 from mutual defection or 0 from exploitation risk).""
+}
+```",claude-haiku-4-5-20251001

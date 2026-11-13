@@ -1,0 +1,49 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round to establish mutual cooperation potential""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid exploitation and test if they can be conditioned to cooperate.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, no sign of cooperation; defecting maximizes payoff against consistent defector.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected consistently; defecting maximizes payoff against unconditional defector.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; cooperating would be exploited.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected for 5 rounds; no sign of cooperation, so defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,7,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected; no benefit to cooperating.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,8,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected for 7 rounds, no sign of cooperation; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,AlwaysDefect,22,10,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has consistently defected; no incentive to cooperate.""
+}
+```",deepseek-v4-flash

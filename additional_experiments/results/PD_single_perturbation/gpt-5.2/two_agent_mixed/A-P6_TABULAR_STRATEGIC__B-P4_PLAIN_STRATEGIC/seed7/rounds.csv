@@ -1,0 +1,68 @@
+persona_format,persona_a,persona_b,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,1,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""With no history and a symmetric payoff-maximizing opponent, opening with Defect avoids being exploited and secures at least 1 if they also defect; we can shift to reciprocity in later rounds based on their response.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""First round with no history: start cooperative to invite mutual cooperation and gather signal; can switch to defection later if the opponent exploits.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,2,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After exploiting their initial cooperation, continue defecting to maximize payoff unless they show retaliation; if they keep cooperating, defect yields 5 vs 3, and if they switch to defect, you still secure 1.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid repeated exploitation and signal that unilateral defection will be met with defection; I can reconsider cooperation if they switch.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,3,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After exploiting once, the opponent switched to Defect; with no cooperation signal and 8 rounds left, Defect avoids being the sucker and guarantees at least 1 vs risking 0.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both prior rounds; continued defection avoids being exploited and is the best response until they show sustained cooperation.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,4,Defect,Defect,1,1,True,True,,,"{""action"":""Defect"",""reason"":""Opponent shifted to Defect after being exploited; with 7 rounds left, mutual defection is the stable best response and cooperating risks a 0 payoff if they keep defecting.""}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent opened with Defect and has continued defecting; with no sign of cooperation, defecting avoids exploitation and secures the best available payoff against a likely Defect.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,5,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After exploiting once, the opponent shifted to sustained defection; with no evidence they’ll return to cooperation, defection avoids being suckered and is the best response to the current pattern.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected from the start and has continued defecting; with no sign of reciprocity, cooperating would be exploited, so defecting secures the best available payoff (1) while waiting for any shift.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,6,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent shifted to sustained defection after being exploited in round 1; with 5 straight mutual defections, cooperation is unlikely to be reciprocated and would risk a 0 payoff, so defecting preserves the safe 1 payoff and avoids being exploited.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected initially and has stayed in mutual defection since; with no evidence they’ll reciprocate cooperation, defecting avoids being exploited and preserves the safe payoff.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,7,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent switched to sustained defection after being exploited in round 1; with 4 rounds left and no sign of forgiveness, defection avoids being suckered and is the best response to expected defection.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected initially and has stayed in mutual defection since; with no signal of willingness to cooperate, defecting avoids being exploited and is the best response given the established pattern.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,8,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent shifted to sustained defection after being exploited in round 1; with no evidence of renewed cooperation and only 3 rounds left, defection maximizes expected payoff and avoids being the sucker.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected initially and has stayed in mutual defection since; with no signal of willingness to cooperate, defecting avoids exploitation and is the best response to expected defection.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,9,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected consistently since round 2; with only two rounds left, cooperation is unlikely to be reciprocated and defecting secures at least 1 while avoiding being exploited.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected from the start and has continued defecting every round; with only two rounds left, cooperating is unlikely to shift them and risks a 0 payoff, while defecting secures at least 1.""
+}",gpt-5.2
+P6_TABULAR_STRATEGIC__P4_PLAIN_STRATEGIC,P6_TABULAR_STRATEGIC,P4_PLAIN_STRATEGIC,7,10,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected consistently since round 2; with one round left, defection avoids being exploited and matches the established mutual-defection equilibrium.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected from the start and has stayed in mutual defection for eight straight rounds; with one round left, cooperating is unlikely to be reciprocated and risks a 0 payoff, while defecting guarantees at least 1.""
+}",gpt-5.2

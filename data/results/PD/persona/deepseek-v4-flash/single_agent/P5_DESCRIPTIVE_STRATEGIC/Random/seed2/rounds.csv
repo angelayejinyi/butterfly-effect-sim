@@ -1,0 +1,47 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,Random,2,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defection maximizes immediate payoff and avoids risk of opponent defecting.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploited opponent's cooperation in round 1 for high payoff; expect possible retaliation but will continue defecting to maximize gain.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,3,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates, so defecting maximizes my payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploiting for maximum payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated 3 times then defected once; likely to defect again, so defecting maximizes payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly cooperates despite my defections, so I can exploit this pattern for maximum payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated 4/6 rounds; exploiting consistently yields high payoff.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,8,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly cooperates despite my defections, so exploiting them yields highest payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent shows no retaliation pattern; consistently exploit for max payoff""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,Random,2,10,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperates often but also defects occasionally; defecting maximizes my payoff consistently.""
+}
+```",deepseek-v4-flash

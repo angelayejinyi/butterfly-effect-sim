@@ -1,0 +1,51 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,17,1,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and encourage mutual cooperation.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 1, so I defect to avoid exploitation and seek better payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in both rounds, so defecting is safe and avoids exploitation.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected consistently; defecting maximizes payoff against unconditional defection.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,5,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in all rounds, so defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,6,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent mostly defects; exploit by defecting for safety and payoff""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,7,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defects consistently; no benefit to cooperate.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,8,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent mostly defects, so defecting maximizes payoff""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects, occasional cooperation is exploitable; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,17,10,Defect,Defect,1,1,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has shown no consistent cooperation; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash

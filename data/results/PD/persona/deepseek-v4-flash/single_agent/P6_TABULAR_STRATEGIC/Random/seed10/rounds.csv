@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,10,1,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Maximize initial payoff and exploit potential cooperation""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,2,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated in round 1 despite my defect, suggesting a forgiving or cooperative strategy; cooperating now may build mutual cooperation for higher long-term payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, so exploit by defecting to avoid low payoff and maximize total.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,4,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, so exploit their potential weakness by defecting to secure payoff and avoid being exploited again.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,5,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent alternates between Cooperate and Defect; exploit by Defecting to secure high payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,6,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after my defections, so exploiting with defect yields high payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection; exploit to maximize payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, but also defects sometimes; defecting maximizes payoff given uncertainty.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, but recent mutual defections suggest they may be retaliating; defecting maximizes payoff given uncertainty.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,10,10,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, so exploit for high payoff.""
+}",deepseek-v4-flash

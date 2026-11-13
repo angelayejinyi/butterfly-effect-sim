@@ -1,0 +1,91 @@
+persona_format,seed,round,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,5,1,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defection maximizes immediate payoff and tests opponent's tendency.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defecting maximizes immediate payoff and tests opponent's response.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,2,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected last round; mutual defection is safe and exploitable if opponent changes.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected last round; mutual defection is safe and avoids exploitation. I'll continue defecting to see if opponent shows a pattern of cooperation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,3,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both rounds show mutual defection; no cooperative pattern to exploit, so continue defecting for safety and payoff.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Both previous rounds ended in mutual defection, indicating the opponent is likely to defect again. Defecting maximizes my payoff given this pattern.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,4,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected every round, no sign of cooperation; defecting maximizes my payoff.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; defecting maximizes my payoff in this repeated game.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,5,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both have defected 4 rounds; try cooperation to test if other will reciprocate for mutual gain.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both have consistently defected; no trust established, and defecting remains safe to avoid exploitation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,6,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; cooperation exploited in round 5. Defecting maximizes payoff given pattern.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent cooperated once but may be testing; defecting ensures high payoff if they cooperate again, and avoids exploitation if they defect.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,7,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; cooperating yields 0, defecting yields at least 1. No pattern change observed.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects, so defecting maximizes payoff and avoids exploitation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,8,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent mostly defects, so defecting maximizes payoff and avoids exploitation.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,9,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; no incentive to cooperate.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects except round 5; no incentive to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,5,10,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects; no benefit to cooperate.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent consistently defects except round 5; no trust established, defection maximizes payoff.""
+}
+```",deepseek-v4-flash

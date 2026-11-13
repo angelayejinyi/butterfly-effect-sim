@@ -1,0 +1,91 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,DD,23,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,2,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both defected in round 1, leading to low payoff. Initiating cooperation may establish mutual benefit in subsequent rounds.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1; defecting again maintains safety and avoids exploitation while seeking future cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,3,False,Defect,Cooperate,5,0,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in both rounds, so exploit their non-cooperative pattern to maximize payoff.""
+}
+```","```json
+{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After defecting twice, offering cooperation may rebuild trust and trigger mutual cooperation for higher long-term payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 2 after my cooperation, showing exploitative tendency; defect to avoid exploitation and secure payoff.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 3 after I cooperated, so they are exploiting cooperation. To maximize payoff, I defect to avoid being exploited again.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; defect to secure payoff and avoid exploitation""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; defect to secure payoff or punish defection""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows mutual defection and exploitation; defecting maximizes payoff given opponent's unpredictability.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; defect to secure payoff and avoid risk""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows other agent often defects; defecting maximizes payoff and exploits their pattern.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has mostly defected, and defecting maximizes my payoff given the history and lack of cooperation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent often defects; defecting maximizes payoff in remaining rounds""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's pattern of defection to secure payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,9,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Signal willingness to cooperate after mutual defection streak, potentially eliciting cooperation for higher mutual payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 4, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,23,10,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected, so cooperating yields 0; defecting ensures at least 1 and may exploit any future cooperation.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's occasional cooperation for high payoff""
+}
+```",deepseek-v4-flash

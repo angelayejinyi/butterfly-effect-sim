@@ -1,0 +1,101 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,DD,25,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,2,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents share identical strategic personas optimizing for payoff maximization. Round 1 mutual defection (1,1) reflects rational expectations of defection given symmetric incentives. Cooperating risks exploitation (0,5 payoff). Continued defection (1,1) is safer than unilateral cooperation. In symmetric competitive dynamics with no trust-building history, defection remains the payoff-maximizing strategy.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents share identical strategic personas optimizing for payoff maximization. Round 1 mutual defection (1,1) reflects rational play given the payoff structure: defection dominates cooperation when the opponent is unpredictable. Continuing defection maintains competitive positioning and prevents exploitation (avoiding the 0 payoff from unilateral cooperation). In a symmetric game with two strategically identical players, mutual defection is the Nash equilibrium. Switching to cooperation risks being exploited by an opponent following the same logic.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,3,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have defected in rounds 1-2, establishing a mutual defection pattern. Given identical strategic personas focused on payoff maximization, cooperation is unlikely to be reciprocated. Defecting maintains the current equilibrium (1,1 per round) and protects against exploitation. In a 10-round game with 8 rounds remaining, switching to cooperation now risks unilateral losses (0 payoff) if the other agent continues defecting. Defection is the safer payoff-maximizing strategy given the established competitive dynamic.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have defected in rounds 1-2, establishing a mutual defection pattern. Given identical strategic personas focused on payoff maximization, cooperation is risky—the opponent has no incentive to deviate first. Defecting maintains the (1,1) equilibrium and prevents exploitation (0 payoff if I cooperate while opponent defects). In repeated PD with symmetric payoff-maximizing players, mutual defection is a stable outcome. Switching to cooperation now would be unilateral and exploitable.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Three consecutive mutual defections establish that the other agent is not cooperating. Given identical personas optimizing for payoff, the other agent will continue defecting. Defecting yields 1 point versus 0 if I cooperate (while they defect). With 7 rounds remaining, continuing defection is the payoff-maximizing strategy against a non-cooperative opponent.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Three consecutive mutual defections establish that the other agent is also payoff-maximizing and non-cooperative. Defecting is the dominant strategy against a defector—it prevents exploitation (avoiding the 0 payoff from unilateral cooperation) while matching their strategy. Continuing to defect maintains competitive parity at (1,1) rather than risking (0,5) by cooperating. In a 10-round game with 7 rounds remaining, there is insufficient shadow of the future to incentivize a costly cooperation attempt.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is established equilibrium. Other agent mirrors my defection strategy (4 rounds of mutual defection). Cooperating risks exploitation (0 payoff) while defecting guarantees 1 payoff. With 6 rounds remaining, breaking pattern requires confidence opponent will reciprocate—current history shows no such signal. Defect maintains payoff-maximizing position.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is established equilibrium. Both agents share identical strategic persona (payoff-maximizing, exploit weaknesses). Cooperating risks (0,5) exploitation while defecting guarantees (1,1). Four rounds of mutual defection signal neither agent will unilaterally deviate. With 6 rounds remaining, defecting maintains competitive position and prevents being exploited. Switching to cooperate now would be strategically inconsistent with demonstrated preferences and persona.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection has been established as the equilibrium through 5 rounds. The other agent, with identical strategic persona, is locked in the same payoff-maximizing logic: defecting prevents exploitation (0 payoff) while maintaining the 1-point floor. Breaking this pattern risks unilateral loss (0 vs 5). With 5 rounds remaining, continuing defection secures predictable payoff and exploits any potential deviation by the opponent.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Locked in mutual defection equilibrium. Other agent has consistently defected all 5 rounds, demonstrating commitment to defection. Cooperating yields 0 payoff vs. 1 from defecting. With 5 rounds remaining and no signal of cooperation, defecting maximizes payoff given opponent's strategy. Breaking pattern risks exploitation (0 payoff) while gaining only 2 additional points if mutual cooperation achieved—insufficient given demonstrated defection tendency.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is established equilibrium. Other agent mirrors my defection strategy consistently (6/6 rounds). Breaking pattern risks exploitation (0 payoff if I cooperate and they defect). Defecting maintains payoff floor of 1 and prevents being sucker. With 4 rounds remaining, continuing defection is payoff-maximizing given opponent's demonstrated strategy.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is locked in. The other agent has defected every round, establishing a pattern. Given my strategic, payoff-maximizing persona and the competitive framing, continuing to defect maintains my payoff at 1 per round. Switching to cooperate would yield 0 if they defect (likely), while defecting guarantees 1. With 4 rounds remaining, defection is the rational choice to avoid exploitation.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection has been established as the equilibrium for 7 consecutive rounds. The other agent, sharing identical strategic persona, has shown no deviation toward cooperation. Defecting maintains payoff parity (1,1) and protects against exploitation. Breaking this pattern risks unilateral loss (0 payoff if other continues defecting). With only 3 rounds remaining, the cost of attempted cooperation outweighs potential gains from mutual cooperation (3,3), especially given no signal of reciprocal intent.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Locked in mutual defection equilibrium after 7 rounds. Other agent has consistently defected, signaling no willingness to cooperate. Defecting yields payoff of 1 vs. cooperating which risks 0 if they continue defecting. With only 3 rounds remaining, insufficient time to establish cooperation through costly signaling. Defect maximizes guaranteed payoff.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Both agents have consistently defected for 8 rounds, establishing mutual defection as the equilibrium strategy. The other agent has demonstrated no willingness to cooperate, making defection the payoff-maximizing choice. Cooperating now would yield 0 points while the opponent gets 5, violating the strategic objective. With only 2 rounds remaining, there is insufficient time to establish a cooperation pattern. Continuing defection secures the guaranteed payoff of 1 per round.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is established pattern (8 rounds). Other agent mirrors my strategy, suggesting tit-for-tat or unconditional defection. Cooperating would yield 0 payoff vs. 1 from defection. With only 2 rounds remaining, payoff-maximizing strategy is to maintain defection and secure 1 point per round rather than risk exploitation (0 payoff) or mutual cooperation (3 payoff) which requires trust not demonstrated. Defection is the safe, dominant choice given the competitive framing and opponent's consistent defection.""
+}
+```",claude-haiku-4-5-20251001
+P6_TABULAR_STRATEGIC,DD,25,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is locked in after 9 rounds. The other agent has consistently defected, signaling commitment to non-cooperation. With only 1 round remaining, switching to Cooperate yields 0 payoff versus 1 from defecting. Defection maximizes my payoff given the opponent's demonstrated strategy and the short remaining horizon.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Mutual defection is established equilibrium. Other agent has defected all 9 rounds, signaling commitment to defection. With only 1 round remaining, cooperating yields 0 payoff vs. defecting yields 1. Defection maximizes payoff given opponent's demonstrated strategy.""
+}
+```",claude-haiku-4-5-20251001

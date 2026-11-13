@@ -1,0 +1,51 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,3,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to build trust; defection maximizes immediate payoff and exploits potential opponent cooperation.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 1, so they may be cooperative; exploit this to maximize payoff in round 2.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates, so defecting maximizes payoff each round.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated twice then defected; exploit potential weakness by defecting to maximize payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,5,Defect,Cooperate,5,0,True,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent has not retaliated against defection, suggesting a weak or forgiving strategy; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,6,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in rounds 1,2,5 despite my defections, suggesting a forgiving or exploitable strategy; defecting maximizes my payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's tendency to cooperate despite defection, maximizing payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown no retaliation pattern; exploiting cooperation yields highest payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has shown no retaliation pattern; defecting maximizes payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,3,10,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 9, but has also defected in streaks; defecting maximizes payoff against this unpredictable pattern.""
+}",deepseek-v4-flash

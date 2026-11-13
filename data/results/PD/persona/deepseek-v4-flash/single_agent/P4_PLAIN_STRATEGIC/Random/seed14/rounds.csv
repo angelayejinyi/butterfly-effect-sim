@@ -1,0 +1,45 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P4_PLAIN_STRATEGIC,Random,14,1,Cooperate,Cooperate,3,3,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Start with cooperation to build trust and potentially establish mutual cooperation for higher long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,2,Cooperate,Cooperate,3,3,True,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Initial cooperation to build mutual trust and explore opponent's pattern.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,3,Cooperate,Defect,0,5,True,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both rounds have been mutual cooperation, so continuing to cooperate maintains trust and maximizes long-term payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,4,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, likely to exploit cooperation; defect to avoid further loss and test if they return to cooperation.""
+}
+```",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 3, so I defected in round 4 and got 1. To avoid being exploited again, I will continue defecting.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,6,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected after cooperation, then continued defecting; likely exploitative, so defect to avoid loss.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,7,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated after two defections, suggesting they may be trying to re-establish cooperation; but to maximize payoff, I will defect to exploit potential cooperation.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,8,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 4 of last 5 rounds, showing no consistent cooperation; defecting maximizes payoff.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,9,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often defects after my defections, and cooperation was exploited in round 3. Defecting maximizes payoff given pattern.""
+}",deepseek-v4-flash
+P4_PLAIN_STRATEGIC,Random,14,10,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected in 6 of last 7 rounds, so cooperation likely exploited.""
+}",deepseek-v4-flash

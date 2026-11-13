@@ -1,0 +1,89 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,CC,29,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1, building mutual trust; continue cooperation to maximize long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; starting with mutual cooperation to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,3,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Both cooperated in first two rounds, establishing mutual trust. Continuing cooperation maximizes joint payoff and avoids risking retaliation from defection.""
+}
+```","```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Both cooperated in first two rounds, establishing mutual trust. Continuing cooperation maximizes long-term payoff, but I'll watch for any defection to exploit later.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,4,False,Cooperate,Cooperate,3,3,True,True,,,"```json
+{
+    ""action"": ""Cooperate"",
+    ""reason"": ""Mutual cooperation yields steady gains; exploit if opponent defects first.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent gains; continue to build trust and maximize long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,5,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady payoff; opponent has consistently cooperated, so no exploitable pattern yet.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently cooperated; exploit by defecting for higher payoff now.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected last round; I will punish defection and protect my payoff.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's consistent cooperation for higher payoff""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 5, breaking cooperation; retaliate to deter future exploitation and maximize payoff.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After my defection in round 5, opponent retaliated in round 6. To maximize payoff, I'll continue defecting; opponent may cooperate again if I signal willingness, but I'll exploit any cooperation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After mutual cooperation for 4 rounds, opponent defected in round 5. I retaliated with defect in rounds 6-7, and opponent also defected. To maximize payoff in remaining rounds, I will continue defecting to avoid exploitation and secure at least 1 point per round.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Exploit opponent's cooperation pattern after they retaliated; maintain defection to maximize payoff""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""After round 5, opponent defected; subsequent mutual defection suggests they may continue defecting. To maximize payoff in final rounds, I defect to avoid exploitation and secure at least 1.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Opponent continued cooperating after my defection, then switched to defect. Now stuck in mutual defection; no sign they will forgive, so I maximize by defecting.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,29,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""The opponent defected in round 5 and has since matched my defections, showing no willingness to return to cooperation. To maximize payoff in the final round, I defect to secure at least 1 point and avoid the risk of 0.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has continued to defect after my defection, so mutual defection is stable; no incentive to cooperate alone.""
+}",deepseek-v4-flash

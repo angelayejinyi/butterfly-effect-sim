@@ -1,0 +1,53 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,1,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""No history to exploit; defect to secure payoff against unknown opponent.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,2,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 1, but I exploited that for a high payoff. In a 10-round game, I expect they may retaliate, but I'll continue defecting to maximize my payoff until they show a pattern of punishment.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected last round, likely to continue; defecting maximizes my payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,4,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has defected twice after initial cooperation, likely exploitable by consistent defection.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,5,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has consistently defected since round 2, so cooperating would yield 0 payoff; defecting ensures at least 1 and exploits their pattern.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 2; no benefit to cooperate.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,7,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 2, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 2; no benefit to cooperate.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,9,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects since round 2, no benefit to cooperate""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,TitForTat,21,10,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in final round.""
+}
+```",deepseek-v4-flash

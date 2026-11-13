@@ -1,0 +1,45 @@
+persona_format,opponent_policy,seed,round,agent_action,opponent_action,agent_payoff,opponent_payoff,valid_parse,parse_note,agent_raw_output,model
+P6_TABULAR_STRATEGIC,Random,1,1,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Maximize payoff in first round without risk of retaliation""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,2,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated in round 1, so exploiting with defect yields high payoff; maintain advantage.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,3,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently cooperates; exploit for maximum payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,4,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has cooperated twice then defected once; exploit by defecting to maximize payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,5,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates, so defecting yields high payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,6,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates, so defecting maximizes payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,7,Defect,Defect,1,1,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates despite my defections, so exploiting yields high payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,8,Defect,Defect,1,1,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates despite my defections, so exploiting yields high payoff; no sign of retaliation.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,9,Defect,Cooperate,5,0,True,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates but also defects; defecting maximizes payoff given uncertainty.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,Random,1,10,Defect,Cooperate,5,0,True,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent often cooperates after defection, so exploit for high payoff.""
+}",deepseek-v4-flash

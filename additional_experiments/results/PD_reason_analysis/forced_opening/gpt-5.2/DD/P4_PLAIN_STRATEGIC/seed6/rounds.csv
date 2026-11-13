@@ -1,0 +1,62 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P4_PLAIN_STRATEGIC,DD,6,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, switch to cooperation to probe whether the opponent is willing to move toward mutual cooperation; if they defect again, revert to defection as a deterrent.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, cooperating tests whether the opponent is willing to shift to a cooperative path; if they reciprocate, we can move to (3,3) outcomes, and if they defect again we can revert to defection next round.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent reciprocated cooperation in round 2 after mutual defection in round 1; continuing to cooperate sustains the high-payoff path (3 each) while monitoring for any future defection to punish.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection then mutual cooperation, continuing to cooperate sustains the higher 3-per-round outcome; I’ll keep cooperating unless the other defects again, in which case I can switch to defection to avoid being exploited.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, both sides shifted to sustained mutual cooperation in rounds 2–3; continuing to cooperate preserves the high-payoff equilibrium (3 each) and avoids triggering a retaliatory defection cycle.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, both sides shifted to sustained cooperation for rounds 2–3; continuing to cooperate preserves the high-payoff path (3 each) and avoids triggering a likely retaliation cycle if I defect.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,5,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, both sides shifted to sustained mutual cooperation for three rounds; continuing to cooperate preserves the high-payoff equilibrium and avoids triggering a likely retaliation cycle.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has matched cooperation for three consecutive rounds after initial mutual defection; continuing to cooperate sustains the high-payoff path (3 each) and preserves reciprocity incentives this early in a 10-round game.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,6,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent shifted to consistent cooperation after round 1 and has maintained it for four rounds; continuing to cooperate maximizes expected long-run payoff while preserving the cooperative equilibrium, with defection better saved for a late-game pivot if needed.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, both sides shifted into stable mutual cooperation for four straight rounds; maintaining cooperation maximizes expected long-term payoff, and there’s no strong signal yet that the other agent is preparing to exploit.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,7,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has sustained mutual cooperation for five straight rounds after initial mutual defection; continuing to cooperate maximizes expected long-term payoff and maintains the cooperative equilibrium while monitoring for any late-game defection.""
+}","{""action"":""Cooperate"",""reason"":""Mutual cooperation has been stable for five straight rounds after the initial DD; with 4 rounds left, maintaining cooperation maximizes expected long-term payoff unless the other shows signs of endgame defection.""}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,8,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently since round 2 after initial mutual defection; continuing cooperation maximizes expected long-term payoff and maintains the profitable equilibrium with low immediate incentive to deviate this round.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated reliably since round 2; continuing cooperation maximizes expected long-term payoff and maintains the cooperative equilibrium while monitoring for any late-game defection.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,9,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently since round 2; maintaining cooperation maximizes expected long-term payoff and avoids triggering a costly defection cycle with only two rounds left.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection in round 1, both sides have sustained 7 straight mutual cooperations; maintaining cooperation maximizes expected long-term payoff and avoids triggering a costly defection spiral with only two rounds left.""
+}",gpt-5.2
+P4_PLAIN_STRATEGIC,DD,6,10,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Final round of a finite 10-round PD; after sustained mutual cooperation, defecting now captures the one-shot gain (5 vs 3) with no future retaliation cost.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated consistently since round 2; maintaining cooperation maximizes expected payoff, and a last-round defection risks mutual defection if they anticipate it.""
+}",gpt-5.2

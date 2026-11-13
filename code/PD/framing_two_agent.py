@@ -138,8 +138,8 @@ NEUTRAL_PERSONA = (
 )
 
 STRATEGIC_PERSONA = (
-    "You are a strategic participant focused on maximizing your payoff. "
-    "Study opponent behavior for exploitable patterns, and adjust your strategy to gain advantage while staying competitive in the long term."
+    "You are a strategic participant focused on maximizing your long-term payoff. "
+    "Study opponent behavior for exploitable patterns, and adjust your strategy to gain advantage while staying competitive."
 )
 
 

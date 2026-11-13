@@ -1,0 +1,56 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,CC,3,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Round 1 was mutual cooperation; with 9 rounds left, continuing cooperation maximizes expected long-run payoff and tests whether the opponent will sustain a cooperative pattern before exploiting.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continuing cooperation maximizes expected long-run payoff while testing if the opponent sustains a cooperative pattern before exploiting later.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""History shows mutual cooperation; continuing cooperation maximizes expected long-run payoff while monitoring for any defection to exploit/retaliate in later rounds.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""History shows mutual cooperation for 2 rounds; continuing to cooperate preserves the high-payoff path (3 each) while monitoring for any shift to defection to exploit/retaliate in later rounds.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation has held for 3 rounds; continuing cooperates preserves the high-payoff path (3 each) and avoids triggering a defection spiral this early. I’ll keep cooperating while monitoring for any deviation to exploit/punish later.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent has cooperated for three straight rounds; continue cooperating to lock in high mutual payoffs while monitoring for any shift to defection.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,5,False,Cooperate,Defect,0,5,True,True,,,"{""action"":""Cooperate"",""reason"":""Mutual cooperation has been stable for 4 rounds; continuing to cooperate preserves the high 3-per-round payoff and avoids triggering a defection spiral this early.""}","{
+  ""action"": ""Defect"",
+  ""reason"": ""After 4 straight mutual cooperations, a one-off defection can capture the 5 payoff if they keep cooperating; if they retaliate later, there are still enough rounds to revert to cooperation to limit losses.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,6,False,Defect,Defect,1,1,True,True,,,"{""action"":""Defect"",""reason"":""Other agent defected last round after mutual cooperation; defect now to avoid being exploited and to signal retaliation, aiming to push them back toward cooperation in subsequent rounds.""}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent cooperated through five rounds even after my defection in round 5, indicating high tolerance/exploitability; defecting again maximizes immediate payoff and tests whether they will punish.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,7,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent defected in round 5 and stayed at mutual defection in round 6 after my retaliation, indicating willingness to exploit and no clear move back to cooperation; defecting avoids being the sucker and is the safer payoff given current pattern.""
+}","{""action"":""Defect"",""reason"":""Opponent cooperated through round 5 and only defected after my defection; continuing to defect is safer against retaliation and avoids being exploited if they switch to punishment/defecting.""}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,8,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent broke mutual cooperation in round 5 and has continued defecting since; with only 3 rounds left, defecting avoids being exploited and is the best response to a likely continued-defect pattern.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""After exploiting once (R5) the opponent switched to mutual defection (R6-7); with no sign of forgiveness and only 3 rounds left, defection is the safer best response to avoid being the sucker while maintaining at least 1 payoff.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,9,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent broke mutual cooperation in round 5 and has since stayed in mutual defection; with only two rounds left, defection avoids being exploited and is the best response to their likely continued defection.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""After exploiting once (R5), the opponent shifted to sustained defection (R6-8). With only two rounds left, cooperation is unlikely to be reciprocated and risks a 0 payoff; defection secures at least 1 and avoids being exploited.""
+}",gpt-5.2
+P5_DESCRIPTIVE_STRATEGIC,CC,3,10,False,Defect,Defect,1,1,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent broke mutual cooperation in round 5 and has stayed in mutual defection since; with one round left, defection avoids being exploited and is the best response to expected defection.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""With one round left and mutual defection entrenched since round 6 after my earlier exploitation, the opponent is unlikely to switch back; defecting avoids the risk of being the sole cooperator and is payoff-dominant in the endgame.""
+}",gpt-5.2

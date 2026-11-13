@@ -1,0 +1,95 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,DD,21,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,2,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both defected in round 1, leading to low payoff. Initiating cooperation may encourage mutual benefit in subsequent rounds.""
+}","{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1; defecting again avoids exploitation and maintains payoff symmetry.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,3,False,Defect,Cooperate,5,0,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in both rounds, so exploit their non-cooperative pattern to maximize payoff.""
+}
+```","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After two rounds of exploiting, offering cooperation may rebuild trust and lead to mutual cooperation for higher total payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 2 after I cooperated, showing exploitative tendency; defecting now maximizes payoff and punishes defection.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other defected in round 3 after I cooperated, indicating exploitation; defecting now maximizes payoff and punishes defection.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has defected in 2 of 4 rounds and cooperated only once; exploiting their inconsistency maximizes payoff.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has shown inconsistency (Defect, Cooperate, Defect), and defecting exploits their potential cooperation while avoiding the sucker payoff.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent often defects; defecting maximizes payoff and exploits their pattern.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows mutual defection and exploitation; defecting maximizes payoff given opponent's unpredictability.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; maximize payoff""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent consistently defects; defecting maximizes payoff in remaining rounds""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent often defects; defecting maximizes payoff and exploits weakness.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent consistently defects; defecting maximizes payoff in remaining rounds.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's pattern of mostly defecting; maximize payoff in final rounds""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,21,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent consistently defects; defecting maximizes payoff in remaining rounds""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 3, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash

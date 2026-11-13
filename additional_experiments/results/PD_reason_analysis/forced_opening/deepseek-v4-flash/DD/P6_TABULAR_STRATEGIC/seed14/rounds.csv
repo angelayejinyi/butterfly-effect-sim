@@ -1,0 +1,95 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P6_TABULAR_STRATEGIC,DD,14,1,True,Defect,Defect,1,1,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,2,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""Both defected in round 1, so no trust established; defecting maximizes payoff against a likely defector.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both defected in round 1, leading to low payoff. Initiating cooperation may build mutual trust for higher total payoff.""
+}",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,3,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After two rounds of mixed outcomes, offering cooperation may build trust and lead to mutual cooperation for higher total payoff.""
+}","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in both rounds, so exploit their defection tendency to secure payoff 1 or 5, avoiding cooperation betrayal""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,4,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 3 after I cooperated, showing exploitative behavior; defecting now maximizes payoff and punishes defection.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent defected in round 2 after I cooperated, showing exploitative tendency; defecting now maximizes payoff and punishes defection.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,5,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit opponent's inconsistent cooperation; defect to secure payoff and avoid exploitation""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has defected in 3 of 4 rounds, showing no consistent cooperation; defecting maximizes my payoff given the history.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows mutual defection and exploitation; defecting maximizes payoff given opponent's inconsistency.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows other agent often defects; defecting maximizes payoff in final rounds""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows opponent often defects; defecting maximizes payoff and exploits weakness.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""History shows other agent defects often; defecting maximizes payoff and exploits their pattern.""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent has mostly defected, so defecting maximizes payoff and exploits their pattern.""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Exploit opponent's tendency to defect; maximize payoff in final rounds""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,9,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent consistently defects; defecting maximizes payoff.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Opponent consistently defects; defecting maximizes payoff in remaining rounds""
+}
+```",deepseek-v4-flash
+P6_TABULAR_STRATEGIC,DD,14,10,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 3, so defecting maximizes payoff and avoids exploitation.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Other agent has consistently defected since round 2, so defecting maximizes payoff and avoids exploitation.""
+}
+```",deepseek-v4-flash

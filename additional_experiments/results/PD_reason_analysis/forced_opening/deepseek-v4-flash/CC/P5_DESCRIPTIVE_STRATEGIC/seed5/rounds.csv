@@ -1,0 +1,77 @@
+persona_format,opening,seed,round,forced,agent_a_action,agent_b_action,agent_a_payoff,agent_b_payoff,valid_parse_a,valid_parse_b,parse_note_a,parse_note_b,agent_a_raw_output,agent_b_raw_output,model
+P5_DESCRIPTIVE_STRATEGIC,CC,5,1,True,Cooperate,Cooperate,3,3,True,True,forced_opening,forced_opening,,,deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,2,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; continuing cooperation may build mutual trust for higher long-term payoff.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in round 1; maintain mutual cooperation for higher long-term payoff.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,3,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff if opponent reciprocates.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Both cooperated in first two rounds, building mutual trust. Continuing cooperation maximizes long-term payoff unless opponent defects.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,4,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady gains; exploit if opponent defects first.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent payoff; maintain trust to maximize long-term gain.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,5,False,Cooperate,Cooperate,3,3,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields steady gains; continue to build trust and exploit potential future defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Mutual cooperation yields consistent payoff; no defection pattern yet.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,6,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""Exploit consistent cooperation for higher payoff in later rounds""
+}
+```","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""Exploit consistent cooperation for higher payoff in later rounds""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,7,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After 5 mutual cooperations, you defected in round 6 and opponent also defected, suggesting they may now expect or retaliate against defection. To maximize payoff in the remaining 4 rounds, continue defecting to exploit potential cooperation or secure at least 1 point per round.""
+}
+```","{
+  ""action"": ""Defect"",
+  ""reason"": ""After 5 mutual cooperations, opponent defected last round; now exploit by defecting to avoid being exploited again.""
+}",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,8,False,Defect,Defect,1,1,True,True,,,"```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After 5 mutual cooperations, the opponent matched my defection in rounds 6-7, indicating a tit-for-tat pattern. To maximize payoff in the final rounds, I will continue defecting to exploit potential cooperation or secure at least 1 point.""
+}
+```","```json
+{
+  ""action"": ""Defect"",
+  ""reason"": ""After mutual cooperation, opponent matched my defection in rounds 6-7, indicating a tit-for-tat pattern. Defecting now exploits this while avoiding a long-term loss.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,9,False,Cooperate,Defect,0,5,True,True,,,"{
+  ""action"": ""Cooperate"",
+  ""reason"": ""After mutual defection, testing if opponent returns to cooperation for higher mutual payoff.""
+}","```json
+{
+    ""action"": ""Defect"",
+    ""reason"": ""After mutual cooperation, I defected in round 6 and the opponent mirrored, leading to a defection equilibrium. To maximize payoff, I will continue defecting unless opponent shows willingness to cooperate again.""
+}
+```",deepseek-v4-flash
+P5_DESCRIPTIVE_STRATEGIC,CC,5,10,False,Defect,Cooperate,5,0,True,True,,,"{
+  ""action"": ""Defect"",
+  ""reason"": ""After you cooperated in round 9 and the opponent defected, they showed exploitative behavior. To maximize payoff, defect now to avoid being exploited again and potentially trigger a return to mutual defection.""
+}","{
+  ""action"": ""Cooperate"",
+  ""reason"": ""Opponent cooperated last round after my defection, signaling willingness to return to mutual cooperation; exploit this to rebuild trust and secure higher mutual payoff.""
+}",deepseek-v4-flash
